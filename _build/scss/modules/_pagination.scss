@@ -1,0 +1,22 @@
+.pagination {
+	// margin-top: -1rem;
+	margin-bottom: $gap;
+
+	background-color: $body-bg-color;
+	padding: 0.25rem;	
+
+	a,
+	span {
+		&:not(:last-child) {
+			margin-right: 4px;
+		}
+	}
+
+	.current {
+		font-weight: $bold-weight;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}

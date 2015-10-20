@@ -1,0 +1,35 @@
+#content {
+	.entry-content {
+		h2:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.entry-byline {
+		margin-top: $gap;
+		margin-bottom: 1rem;
+		// margin-top: -0.5rem;
+		// margin-bottom: 1rem;
+		font-style: italic;
+
+		.entry-author {
+			// margin-right: 1rem;
+		}
+
+		.entry-published {
+
+		}
+	}
+
+	.entry-footer {
+		// margin-top: $gap;
+		margin-bottom: -0.5rem;
+
+		font-size: $small-font-size;
+
+		a {
+			@extend %default-anchor;
+		}
+	}
+}
+

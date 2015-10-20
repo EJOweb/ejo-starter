@@ -1,0 +1,55 @@
+/**
+ * Buttons
+ *
+ * button,
+ * html input[type="button"],
+ * input[type="reset"],
+ * input[type="submit"]
+ */
+
+@mixin button($color: $color-1) {
+	background-color: $color;
+	color: $color-light;
+	border-radius: 5px;
+	font-weight: $normal-weight;
+	padding: rem(10px) rem(18px) rem(11px);
+	line-height: 1;
+	display: inline-block;
+	width: auto;
+	
+	&:hover,
+	&:focus {
+		background-color: darken($color-1, 5%);
+		text-decoration: none;
+	}
+}
+
+.button,
+button,
+input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+	@include button();
+}
+
+@mixin button-alt($color: $color-light) {
+	background-color: rgba($color-dark, 0.1);
+	color: $color;
+	border: 1px solid $color;
+	border-radius: 30px;
+	font-weight: $normal-weight;
+	padding: rem(14px) rem(20px) rem(15px);
+	line-height: 1;
+	display: inline-block;
+	width: auto;
+	
+	&:hover,
+	&:focus {
+		background-color: rgba($color, 0.1);
+		text-decoration: none;
+	}
+}
+
+.button-alt {
+	@include button-alt();
+}

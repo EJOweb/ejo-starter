@@ -1,0 +1,84 @@
+/*
+Font: 		Tide Sans
+Style: 		300 Lil Kahuna
+URL: 		http://www.youworkforthem.com/font/T4743/tide-sans
+Foundry: 	Kyle Wayne Benson
+Foundry: 	http://www.youworkforthem.com/designer/375/kyle-wayne-benson
+Copyright:	 2013 Kyle Wayne
+Version: 	1.4
+Created:	April 20, 2014
+License: 	http://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'TideSans';
+	src: url($font_path + 'tide-sans-300-lil-kahuna.eot');
+	src: url($font_path + 'tide-sans-300-lil-kahuna.eot?#iefix') format('embedded-opentype'),
+	     url($font_path + 'tide-sans-300-lil-kahuna.woff') format('woff'),
+	     url($font_path + 'tide-sans-300-lil-kahuna.ttf') format('truetype'),
+	     url($font_path + 'tide-sans-300-lil-kahuna.svg#ywftsvg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/*
+Font: 		Tide Sans
+Style: 		400 Lil Dude
+URL: 		http://www.youworkforthem.com/font/T4743/tide-sans
+Foundry: 	Kyle Wayne Benson
+Foundry: 	http://www.youworkforthem.com/designer/375/kyle-wayne-benson
+Copyright:	 2013 Kyle Wayne
+Version: 	1.4
+Created:	April 20, 2014
+License: 	http://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'TideSans';
+	src: url($font_path + 'tide-sans-400-lil-dude.eot');
+	src: url($font_path + 'tide-sans-400-lil-dude.eot?#iefix') format('embedded-opentype'),
+	     url($font_path + 'tide-sans-400-lil-dude.woff') format('woff'),
+	     url($font_path + 'tide-sans-400-lil-dude.ttf') format('truetype'),
+	     url($font_path + 'tide-sans-400-lil-dude.svg#ywftsvg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'Ubuntu';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://fonts.gstatic.com/s/ubuntu/v8/_aijTyevf54tkVDLy-dlnFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Ubuntu';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v8/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Ubuntu';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://fonts.gstatic.com/s/ubuntu/v8/0ihfXUL2emPh0ROJezvraFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Ubuntu';
+//   font-style: italic;
+//   font-weight: 400;
+//   src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(http://fonts.gstatic.com/s/ubuntu/v8/WB6rgjTg_oRfj6mlXZJbb_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Ubuntu';
+//   font-style: italic;
+//   font-weight: 700;
+//   src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url(http://fonts.gstatic.com/s/ubuntu/v8/OMD20Sg9RTs7sUORCEN-7Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+// }

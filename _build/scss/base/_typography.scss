@@ -1,0 +1,260 @@
+/*------------------------------------------------------------------
+Main typography
+-------------------------------------------------------------------*/
+html {
+    font-size: $base-font-size / 16px * 100%;
+
+    @include media($barebones) {
+        font-size: ($base-font-size - 2px) / 16px * 100%;
+    }
+}
+
+body {
+    @include font-feature-settings("kern", "liga", "pnum");
+    -webkit-font-smoothing: antialiased;
+    font-family: $base-font-family;
+    font-weight: $normal-weight;
+    // font-weight: $bold-weight;
+    color: $base-font-color;
+    line-height: $base-line-height;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+figure,
+address,
+blockquote,
+pre,
+code,
+object,
+hr,
+.gallery,
+.gform_wrapper,
+audio,
+video,
+object,
+embed,
+iframe {
+    margin-bottom: $base-line-height * 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/*------------------------------------------------------------------
+Links
+-------------------------------------------------------------------*/
+
+a {
+    transition: color 0.1s linear;
+    color: $base-font-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+
+    }
+}
+
+%default-anchor {
+    color: $color-1;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+        border-bottom: 1px solid $color-1;
+    }
+}
+
+#{$content-blocks} {
+    a {
+        @extend %default-anchor;
+    }
+
+    a.button {
+        color: $color-light;
+        border-bottom: none;
+    }
+}
+
+
+/*------------------------------------------------------------------
+Headings
+-------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6,
+%default-heading  {
+    font-family: $heading-font-family;
+    font-weight: $bold-weight;
+    font-weight: $normal-weight;
+    line-height: $heading-line-height;
+    color: $heading-font-color;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: $h1;
+    line-height: $heading-line-height;
+    margin-bottom: $gap;
+
+    @include media(barebones) {
+        font-size: $h1 - rem(4px);
+    }
+}
+
+h2 {
+    font-size: $h2;
+    line-height: $heading-line-height;
+    margin-top: 1.25 * $gap;
+    margin-bottom: $gap;
+
+    @include media(barebones) {
+        font-size: $h2 - rem(5px);
+    }
+}
+
+h3 {
+    font-size: $h3;
+    line-height: $heading-line-height;
+    margin-bottom: 0.9 * $gap;
+
+    @include media(barebones) {
+        font-size: $h3 - rem(5px);
+    }
+}
+
+h4 {
+    font-size: $h4;
+    line-height: $heading-line-height;
+    margin-bottom: 0.5 * $gap;
+
+    @include media(barebones) {
+        font-size: $h4 - rem(5px);
+    }
+}
+
+h5 {
+    font-size: $h5;
+    line-height: $heading-line-height;
+    margin-bottom: 0;
+
+    @include media(barebones) {
+        font-size: $h5 - rem(5px);
+    }
+}
+
+h6 {
+    font-size: $h6;
+    line-height: $heading-line-height;
+    margin-bottom: 0;
+
+    @include media(barebones) {
+        font-size: $h6 - rem(5px);
+    }
+}
+
+
+/*------------------------------------------------------------------
+Titles
+-------------------------------------------------------------------*/
+
+@mixin golden-bar() {
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 1rem auto 0;
+    width: 30px;
+    background-color: $color-1;
+}
+
+/*** Site Title ***/
+
+.site-title {}
+
+/*** Default Title Styles ***/
+
+.entry-title,
+.archive-title,
+.widget-title {
+    text-transform: uppercase;
+
+    @include media(barebones) {
+        // word-break: break-all;
+    }
+}
+
+/*** Entry Titles ***/
+
+.entry-title { 
+    
+    a {
+        &:hover {
+            color: $color-1;
+        }
+    }
+}
+
+h1.entry-title {
+    &:after {
+        @include golden-bar();
+    }
+    margin-bottom: 1.25rem;
+}
+
+h2.entry-title {
+   margin-top: 0;
+}
+
+/*** Widget Titles ***/
+
+.widget-title {
+    margin-top: 0;
+}
+
+.widget-title {
+
+    #content & {
+        font-size: $h1;
+        margin-bottom: 0.75 * $gap;
+
+        @include media(barebones) {
+            font-size: $h1 - rem(5px);
+        }
+
+        &:after {
+            @include golden-bar();
+        }
+    }
+
+    #sidebar-primary & {
+
+    }
+
+    #footer & {
+        color: $color-light;
+        font-size: $h5;
+        margin-bottom: 1rem;
+    }
+}
+
+/*** Archive Titles ***/
+
+.archive-title {
+    &:after {
+        @include golden-bar();
+    }
+}
+
+
+/*------------------------------------------------------------------
+Custom Classes
+-------------------------------------------------------------------*/
+
+.intro {
+    font-size: $big-font-size;
+    font-weight: $bold-weight;
+}

@@ -1,0 +1,29 @@
+//* Typography
+$base-font-family: 'TideSans', arial, sans-serif;
+// $alt-font-family: 'Lato', arial, sans-serif;
+$heading-font-family: 'TideSans', arial, sans-serif;
+
+//* Font weight
+$bold-weight: 400;
+$normal-weight: 300;
+
+//* Default Font Size & line-height
+$em-base: 18px;
+$base-font-size: $em-base;
+$base-line-height: 15 / 8;
+
+$big-font-size: rem($base-font-size + 2px);
+$small-font-size: rem($base-font-size - 2px);
+
+//* Heading Sizes & line-height
+$h1: rem(50px);
+$h2: rem(30px);
+$h3: rem(26px);
+$h4: rem(22px);
+$h5: rem(18px);
+$h6: rem(18px);
+$heading-line-height: 1.2;
+
+//* Elements which contain structured typography
+$content-blocks:	'.entry-content',
+					'.textwidget';

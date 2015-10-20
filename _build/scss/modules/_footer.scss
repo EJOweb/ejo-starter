@@ -1,0 +1,32 @@
+#footer {
+	background-color: $color-2-a;
+
+	&,a {
+		color: darken($color-dark, 10%);
+	}
+
+	.widget {
+		font-family: $base-font-family;
+		font-size: rem(15);
+		line-height: 1.65;
+	}
+
+	.menu {
+		li {
+			margin-bottom: 10px;
+		}
+		.sub-menu {
+			padding-top: 10px;
+			padding-left: 20px;
+		}
+	}
+
+	.textwidget {
+		// margin-top: -5px;
+		// line-height: 2.15;
+	}
+
+	a:hover {
+		border-bottom: 1px solid $color-dark;
+	}
+}

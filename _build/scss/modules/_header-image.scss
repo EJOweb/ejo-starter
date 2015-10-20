@@ -1,0 +1,48 @@
+.header-image-container {
+	position: relative;
+	text-align: center;
+
+	.logo-post-container {
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo {
+		margin-bottom: 5rem;	
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.button {}
+
+	
+	@include media($smartphone) {
+
+		.logo-post-container {
+			top: 25%;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+		.logo {
+			margin-bottom: 4rem;	
+		}
+	}
+
+	@include media($barebones) {
+
+		.logo-post-container {
+			top: 20%;
+		}
+
+		.logo {
+			margin-bottom: 10%;
+		}
+	}
+}
+
+.header-image {
+	margin: 0 auto;
+}

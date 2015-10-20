@@ -1,0 +1,167 @@
+/*------------------------------------------------------------------
+Media
+-------------------------------------------------------------------*/
+img {  
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+audio,
+video,
+object,
+embed,
+iframe {
+    max-width: 100%;    
+}
+
+/*------------------------------------------------------------------
+Links
+-------------------------------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------
+Tables
+-------------------------------------------------------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+
+/*------------------------------------------------------------------
+Forms
+-------------------------------------------------------------------*/
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  width: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+Buttons
+-------------------------------------------------------------------*/
+button,
+.button,
+input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 1;
+}
+
+
+/*------------------------------------------------------------------
+Lists
+-------------------------------------------------------------------*/
+ul,
+ol {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+
+/*------------------------------------------------------------------
+Quotes
+-------------------------------------------------------------------*/
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+
+/*------------------------------------------------------------------
+Uncommon typography
+-------------------------------------------------------------------*/
+abbr[title],
+acronym[title],
+time[title] {
+    cursor: help;
+}
+
+acronym {
+    text-transform: uppercase;
+}
+
+//* Address
+
+address {
+    font-style: italic;
+}
+
+//* Code
+
+pre {
+    word-wrap:     normal;
+    font-family:   monospace;
+}
+
+code {
+    direction:   ltr;
+    text-align:  left;
+    font-family: monospace;
+}
+
+//* Strikethrough
+
+del, 
+s, 
+strike {
+    text-decoration: line-through;
+}
+
+
+/*------------------------------------------------------------------
+Helpers
+-------------------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.hide,
+.hidden {
+    display: none;
+}
+
+.show-if-js {
+    display: none;
+}
+
+.screen-reader-text {
+    display: none;
+}

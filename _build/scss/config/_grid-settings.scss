@@ -1,0 +1,24 @@
+@import "../helpers/neat/neat-helpers"; // or "neat-helpers" when in Rails
+
+//* Viewsize containers
+$desktop-width: 1120px;
+$tablet-width: 840px;
+$smartphone-width: 560px;
+
+$desktop-breakpoint: 1160px;
+$tablet-breakpoint: 880px;
+$smartphone-breakpoint: 560px;
+
+//* Minimum
+$max-width: $desktop-width;
+$min-width: 320px;
+
+$column: 58px;
+$gutter: 24px;
+$grid-columns: 12;
+$border-box-sizing: false;
+
+// Define your breakpoints
+$tablet: new-breakpoint(max-width $desktop-breakpoint);
+$smartphone: new-breakpoint(max-width $tablet-breakpoint);
+$barebones: new-breakpoint(max-width $smartphone-breakpoint);

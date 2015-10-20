@@ -1,0 +1,43 @@
+/*------------------------------------------------------------------
+Alignment
+-------------------------------------------------------------------*/
+
+.alignleft {
+    float:        left;
+    margin-right: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.alignright {
+    float:       right;
+    margin-left: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.alignnone {
+    float: none;
+}
+
+img.alignleft, 
+img.alignright {
+    border-radius: $base-border-radius;
+    // border: $base-border;
+    display: inline;
+}
+
+
+/*------------------------------------------------------------------
+WP classes
+-------------------------------------------------------------------*/
+
+.wp-caption,
+.wp-caption-text {
+    
+}
+

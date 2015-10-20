@@ -1,0 +1,65 @@
+#content {
+
+	.home-intro {
+		margin-bottom: 3rem;
+		padding-top: 1rem;
+
+		@include media($smartphone) {
+			padding-top: 0;
+		}
+
+		iframe {
+			@include media($tablet) {
+				height: 448px;
+			}
+			@include media($smartphone) {
+				height: 290px;
+			}
+		}
+	}
+
+	.home-werkwijze {
+		margin-bottom: 3rem;
+
+		.widget_simpleimage {
+			margin-bottom: 0;
+		}
+	}
+
+	.home-diensten {
+		margin-bottom: 3rem;
+	}
+
+	.home-blog {
+		margin-bottom: 2rem;
+	}
+
+	.home-intro,
+	.home-werkwijze,
+	.home-diensten,
+	.home-blog {
+		// @include media($barebones) {
+		// 	padding-left: 1rem;
+		// 	padding-right: 1rem;
+		// }
+	}
+}
+
+
+// #black-studio-tinymce-3 .full-width {
+//     float: none;
+//     clear: both;
+//     width: 100%;
+//     position: relative;
+//     padding-bottom: 56.25%;
+//     padding-top: 25px;
+//     height: 0;
+// }
+
+// #black-studio-tinymce-3 .full-width iframe {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }

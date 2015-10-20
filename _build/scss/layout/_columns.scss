@@ -1,0 +1,111 @@
+/*------------------------------------------------------------------
+Column Classes
+-------------------------------------------------------------------*/
+
+.columns {
+	@include clearfix;
+
+	> div,
+	> section,
+	> article,
+	> li {
+		float: left;
+	}
+}
+
+.columns-2 {
+	> div,
+	> section,
+	> article,
+	> li {
+		width: 50%;
+
+		&:nth-child(2n + 1) {
+			clear: both;
+		}
+	}
+}
+
+.columns-3 {
+	> div,
+	> section,
+	> article,
+	> li {
+		width: 33.3333%;
+
+		@include media($smartphone) {
+			width: 100%;
+			img { 
+				max-width: none; 
+				width: 100%;
+			}
+		}
+
+		&:nth-child(3n + 1) {
+			clear: both;
+		}
+	}
+}
+
+.columns-4 {
+	> div,
+	> section,
+	> article,
+	> li {
+		width: 25%;
+
+		&:nth-child(4n + 1) {
+			clear: both;
+		}
+	}
+}
+
+/** Column classes **/
+.columns {
+	margin-left: -2px;
+	margin-right: -2px;
+
+	// @include media($tablet) {
+	// 	margin-left: 0;
+	// 	margin-right: 0;
+	// }
+
+
+	> div,
+	> section,
+	> article,
+	> li {
+		padding-left: 2px;
+		padding-right: 2px;
+		margin-bottom: 1rem;
+
+		@include media($tablet) {
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+	}
+}
+
+.columns {
+
+	.entry {
+		margin-top: 0;
+		margin-bottom: 36px;
+
+		.thumbnail-wrap {
+			margin-bottom: 12px;
+		}
+
+		.entry-title {
+			text-transform: none;
+			font-size: 1rem;
+			line-height: 1.5;
+			padding: 0 9px;
+			margin-bottom: 0;
+		}
+
+		a:hover {
+			color: $color-1;
+		}
+	}
+}

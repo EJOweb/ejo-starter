@@ -1,0 +1,16 @@
+//* EJO Icons
+//* v0.5.2 | 20150929
+
+// FontAwesome
+@mixin icon($icon_name: 'no-icon') {
+	display: inline-block;
+	font: normal normal normal 1rem/1 FontAwesome; // shortening font declaration
+	font-size: inherit; // can't have font-size inherit on line above, so need to override
+	text-rendering: auto; // optimizelegibility throws things off #1094
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@if $icon_name != 'no-icon' {
+		content: map-get( $icons, $icon_name );
+	}
+}

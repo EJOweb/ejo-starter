@@ -1,0 +1,9 @@
+body {
+	background-color: $body-bg-color;
+}
+
+#container {
+	min-width: $min-width;
+	position: relative;
+	overflow: hidden;
+}

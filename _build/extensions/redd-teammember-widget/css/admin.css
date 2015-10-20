@@ -1,0 +1,12 @@
+.image-upload {
+	border: 1px dashed #aaa;
+	padding: 10px;
+	font-size: 13px;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.image-upload img {
+	max-width: 100%;
+	height: auto;
+}

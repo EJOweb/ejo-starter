@@ -1,0 +1,11 @@
+.thumbnail-wrap {
+	display: block;
+	background-color: $color-dark;
+	&:hover img {
+		opacity: 0.7;
+	}
+
+	.thumbnail {
+		margin: 0 auto;
+	}
+}

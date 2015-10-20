@@ -1,0 +1,35 @@
+.language-selector {
+	position: absolute;
+	right: 0;
+	background-color: rgba($color-light, 1);
+	padding: rem(4) rem(12);
+	margin-top: 1rem;
+	margin-right: 0.75rem;
+
+	@include media($smartphone) {
+		position: static;
+		right: auto;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: -1rem;
+		padding-top: 1rem;
+	}
+
+	&, a {
+		color: $color-2-c;
+	}
+
+	a:hover {
+		color: $base-font-color;
+	}
+
+	a.active-language {
+		border-bottom: 1px solid $color-2-c;
+
+		&:hover {
+			border-color: $base-font-color;
+		}
+	}
+
+
+}

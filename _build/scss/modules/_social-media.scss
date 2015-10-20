@@ -1,0 +1,56 @@
+//* Reset
+#{$content-blocks} {
+	.social-media {
+		list-style: none;
+		margin: 0;
+
+		li {
+			display: inline-block;
+		}
+
+		a:hover {
+			text-decoration: none;
+			border-bottom: none;
+		}
+	}
+}
+
+.social-media {
+
+	li {
+		margin-right: 1rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	a:hover i {
+		color: darken($color-1, 5%);
+	}
+
+	i:before {
+		@include icon();
+		font-size: 3rem;
+	}
+
+	.twitter:before {
+		content: $fa-var-twitter-square;
+	}
+
+	.facebook:before {
+		content: $fa-var-facebook-square;
+	}
+
+	.instagram:before {
+		content: $fa-var-instagram;
+	}
+
+	.google-plus:before {
+		content: $fa-var-google-plus-square;
+	}
+
+	.pinterest:before {
+		content: $fa-var-pinterest-square;
+	}
+}
