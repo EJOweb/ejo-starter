@@ -2,7 +2,7 @@
 
 # Gulp
 Open command window in your theme root and run the following code (Node should be installed already)
-npm install gulp gulp-util gulp-rename gulp-concat gulp-sourcemaps gulp-sass gulp-uglify gulp-jshint  --save-dev
+<pre><code>npm install gulp gulp-util gulp-rename gulp-concat gulp-sourcemaps gulp-sass gulp-uglify gulp-jshint  --save-dev</code></pre>
 
 # .htaccess
 - Protect
