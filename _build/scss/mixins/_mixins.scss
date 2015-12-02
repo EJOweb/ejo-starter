@@ -1,0 +1,36 @@
+//* Breakpoint query
+@mixin media($width, $min-max: 'max-width', $device: 'screen') {
+
+	//* Check for breakpoint names
+	@if $width == tablet {
+		$breakpoint_width: $desktop-breakpoint;
+	}
+	@else if $width == smartphone {
+		$breakpoint_width: $tablet-breakpoint;
+	}
+	@else if $width == barebones {
+		$breakpoint_width: $smartphone-breakpoint;
+	}
+	@else {
+		$breakpoint_width: $width;
+	}
+
+	//* Output media query
+	@media #{$device} and (#{$min-max}: #{$breakpoint_width}) {
+		@content;
+	}
+}
+
+//make flex rows a bit easier:
+@mixin flex-row( $equalize:stretch ){
+    @include display(flex);
+    @include flex-direction(row);
+    @include align-items($equalize);
+}
+
+//make flex columns a bit easier:
+@mixin flex-col( $equalize:stretch ){
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items($equalize);
+}

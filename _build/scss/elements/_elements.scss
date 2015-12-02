@@ -1,0 +1,98 @@
+/* Box-sizing
+-------------------------------------------------------------------*/
+
+html { // http://bit.ly/1qk2tVR
+    box-sizing: border-box;
+}
+
+* {
+    &,
+    &::after,
+    &::before {
+        box-sizing: inherit;
+    }
+}
+
+/* Body
+-------------------------------------------------------------------*/
+body {
+    background-color: $bg-color;
+}
+
+/* Media
+-------------------------------------------------------------------*/
+
+img {  
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+audio,
+video,
+object,
+embed,
+iframe {
+    max-width: 100%;    
+}
+
+/* Links
+-------------------------------------------------------------------*/
+a {
+    color: $color__link;
+
+    &:visited {
+        color: $color__link-visited;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color__link-hover;
+    }
+    &:focus {
+        outline: thin dotted;
+    }
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+/* Lists
+-------------------------------------------------------------------*/
+
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 0 2.5rem;
+
+    ul, ol {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Tables
+-------------------------------------------------------------------*/
+
+table {
+    width: 100%;
+}
+
+th {
+    border-bottom: 2px solid $border-color;
+    text-align: left;
+}
+
+td {
+    border-bottom: $border;
+}
+
+tr,
+td,
+th {
+    vertical-align: middle;
+}
+

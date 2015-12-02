@@ -1,0 +1,27 @@
+$max-width: 960px;
+$min-width: 288px;
+
+$laptop-breakpoint: 880px;
+$tablet-breakpoint: 720px;
+$smartphone-breakpoint: 560px;
+$barebones-breakpoint: 400px;
+
+// /**
+//  * If working with adaptive container widths
+//  */
+// $laptop-width: 880px;
+// $tablet-width: 720px;
+// $smartphone-width: 560px;
+// $barebones-width: 460px;
+
+$gutter: 36px;
+$gutter-rel: strip-units( $gutter / $max-width ) * 100% ;
+
+// Column widths
+$one-half: (100% - ($gutter-rel * 1)) / 2;
+$one-third: (100% - ($gutter-rel * 2)) / 3;
+$two-third: $one-third * 2 + $gutter-rel;
+$one-fourth: (100% - ($gutter-rel * 3)) / 4;
+$three-fourth: $one-fourth * 3 + $gutter-rel;
+$one-sixth: (100% - ($gutter-rel * 5)) / 6;
+$five-sixth: $one-sixth * 5 + $gutter-rel;

@@ -1,0 +1,35 @@
+// Configure default font-sizes and line-heights
+$em-base: 16px; // Em-base variable for use of bourbon functions
+$ejo-font-size: 16px;
+$ejo-line-height: 26px;
+
+$ejo-font-size-small: 14px;
+$ejo-line-height-small: 21px;
+
+$ejo-font-size-large: 18px;
+$ejo-line-height-large: 32px;
+
+// Heading font-sizes and line-heights
+$h1: rem(32px);
+$h2: rem(24px);
+$h3: rem(20px);
+$h4: rem(16px);
+$heading-line-height: 1.125;
+
+// Typography
+$font-family: georgia, serif;
+$heading-font-family: verdana, serif;
+
+// Font Weights
+$normal-weight: 400;
+$bold-weight: 700;
+
+// Process font-sizes and line-heights
+$font-size: rem($ejo-font-size);
+$line-height: strip-units($ejo-line-height / $ejo-font-size);
+
+$font-size-small: rem($ejo-font-size-small);
+$line-height-small: strip-units($ejo-line-height-small / $ejo-font-size-small);
+
+$font-size-large: rem($ejo-font-size-large);
+$line-height-large: strip-units($ejo-line-height-large / $ejo-font-size-large);

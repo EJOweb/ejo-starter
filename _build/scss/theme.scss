@@ -1,66 +1,65 @@
-//* Bourbon frameworks
-@import "helpers/bourbon/bourbon";
-@import "helpers/bourbon-edit/strip-unit";
+// Resources
+@import "vendors/bourbon/bourbon";
+@import "vendors/icons";
+@import "vendors/social-media";
 
-//* Helpers
-@import "helpers/ejo-toolkit/icons/core";
-@import "helpers/ejo-toolkit/icons/icons";
-@import "helpers/ejo-toolkit/social-media/colors";
-// @import "helpers/ejo-toolkit/responsiveness/media-query";
+// Mixins
+@import "mixins/mixins";
 
-//* Config
-@import "config/typography-settings";
-@import "config/space-settings";
-@import "config/color-settings";
-@import "config/path-settings";
-@import "config/form-settings";
-@import "config/border-settings";
+// Theme Variables
+@import "variables/colors";
+@import "variables/typography";
+@import "variables/structure";
+@import "variables/other";
 
-//* Grid
-@import "helpers/neat/neat-helpers";
-@import "config/grid-settings";
-@import "helpers/neat/neat";
+/* Reset
+------------------------------------------------------------------ */
+@import "vendors/normalize";
 
-//* Reset
-@import "helpers/ejo-toolkit/reset/reset";
+/* Typography
+------------------------------------------------------------------ */
+@import "typography/typography";
+@import "typography/headings";
+@import "typography/copy";
 
-//* Base styles
-@import "base/fonts";
-@import "base/typography";
-@import "base/tables";
-@import "base/lists";
-@import "base/forms";
-@import "base/buttons";
-@import "base/common";
+/* Elements
+------------------------------------------------------------------ */
+@import "elements/elements";
 
+/* Forms
+------------------------------------------------------------------ */
+@import "forms/fields";
+@import "forms/buttons";
 
-//* Layout
-@import "layout/body";
-@import "layout/header";
-@import "layout/main";
-@import "layout/footer";
-@import "layout/columns";
-@import "layout/home";
+/* Accessibility
+------------------------------------------------------------------ */
+@import "modules/accessibility";
 
-//* Plugins
-@import "helpers/ejo-toolkit/gravity-forms/gravity-forms"; //* Gravity Forms
-@import "helpers/slick-modal"; //* Slick Modal
+/* Alignments
+------------------------------------------------------------------ */
+@import "modules/alignments";
 
-// //* Modules (Micro level)
-@import "modules/branding";
-@import "modules/menu-primary";
-@import "modules/menu-primary-mobile";
-@import "modules/header-image";
-@import "modules/archive-header";
-@import "modules/breadcrumbs";
-@import "modules/entries";
-@import "modules/pagination";
-@import "modules/image-effects";
-// @import "modules/project-overzicht";
-@import "modules/simple-image-widget";
-@import "modules/gravity-forms";
-@import "modules/popup";
-@import "modules/language-selector";
-// @import "modules/blog-widget";
-@import "modules/social-media";
-@import "modules/footer";
+/* Layout
+------------------------------------------------------------------ */
+@import "layout/grid";
+
+/* Site
+------------------------------------------------------------------ */
+@import "site/header";
+@import "site/main";
+@import "site/sidebar";
+@import "site/footer";
+
+/* Navigation
+------------------------------------------------------------------ */
+@import "navigation/primary-navigation";
+
+/* Media
+------------------------------------------------------------------ */
+@import "media/galleries";
+@import "media/captions";
+@import "media/smileys";
+
+/* Gravity Forms
+------------------------------------------------------------------ */
+@import "vendors/gravity-forms/setup";

@@ -1,0 +1,8 @@
+1.0.1 / 2015-12-02
+Further reorganized structure
+
+1.0 / 2015-12-02
+Introduced flexbox to structure and reorganized structure
+
+0.9.4 / 23-10-2015
+Removed specific button styling which is theme jurisdiction

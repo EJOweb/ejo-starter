@@ -1,0 +1,62 @@
+/* Fields
+-------------------------------------------------------------------*/
+
+/**
+ * Standardize all form elements
+ */
+
+/* Make sure every form element has default line-height */
+input,
+select,
+textarea {
+	line-height: inherit;
+}
+
+/* Default style of form elements (except radio and checkbox) */
+#{$all-text-inputs},
+select,
+textarea {
+	border: $border;
+	background-color: #fff;
+	box-shadow: $form-box-shadow;
+
+	&:hover {
+		border-color: darken($border-color, 10%);
+	}
+
+	&:focus {
+		border-color: $action-color;
+	}
+}
+
+#{$all-text-inputs},
+textarea {
+	padding: rem(4) rem(8);
+}
+
+select {
+	padding: rem(7) rem(8) rem(6);
+}
+
+.gform_wrapper .gf_list_inline {
+	ul {
+		border-left: $border;
+	}
+	li {
+		padding: rem(4) rem(8);
+		border: $border;
+		border-left: none;
+	}
+	input + label {
+
+	}
+}
+
+textarea {
+	resize: vertical;
+}
+
+/* Style label of checked input */
+input:checked + label {
+
+}

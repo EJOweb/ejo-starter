@@ -1,0 +1,73 @@
+/* Structure */
+.gform_fields {
+	@include flex-row();
+	@include justify-content(space-between);
+	@include flex-wrap(wrap);
+
+	/* Let empty list-item not disrupt flex-items */
+	> li:empty {
+   		display: none;
+    }
+
+	.gfield {
+		
+		@include flex(0 0 100%);
+		max-width: 100%; /* Tell IE10/11 not to grow larger */
+		min-width: 0;
+	}
+
+	> .gf_half,
+	> .gf_left_half,
+	> .gf_right_half {
+		@include flex-basis(48%);
+		max-width: 48%; /* Tell IE10/11 not to grow larger */
+		min-width: 0;
+	}
+
+	> .gf_one_third,
+	> .gf_left_third,
+	> .gf_right_third,
+	> .gf_middle_third {
+		@include flex-basis(30.66666%);
+		max-width: 30.66666%; /* Tell IE10/11 not to grow larger */
+		min-width: 0;
+	}
+
+	> .gf_two_third {
+		@include flex-basis(65.33333%);
+		max-width: 65.33333%; /* Tell IE10/11 not to grow larger */
+		min-width: 0;
+	}
+
+	> .gf_one_fourth {
+		@include flex-basis(22%);
+		max-width: 22%; /* Tell IE10/11 not to grow larger */
+		min-width: 0;
+	}
+
+	> .gf_three_fourth {
+		@include flex-basis(74%);
+		max-width: 74%; /* Tell IE10/11 not to grow larger */
+		min-width: 0;
+	}
+
+	.gcolumn {
+		@include flex-basis(48%);
+		max-width: 48%; /* Tell IE10/11 not to grow larger */
+		min-width: 0;
+	}
+
+	.gf_list_inline {
+		ul.gfield_radio,
+		ul.gfield_checkbox {
+			@include flex-row();
+			@include justify-content(flex-start);
+			@include flex-wrap(wrap);
+			li {
+				@include flex(0 1 auto);
+				max-width: 100%; /* Tell IE10/11 not to grow larger */
+				min-width: 0;
+			}
+		}
+	}
+}

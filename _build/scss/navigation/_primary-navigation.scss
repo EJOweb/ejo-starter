@@ -1,0 +1,111 @@
+/* Defaults */
+#menu-primary {
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	li, a {
+		display: block;
+	}
+}
+
+/* Structure */
+#menu-primary {
+	.menu-items {
+		@include flex-row();
+		@include justify-content(flex-start);
+		@include flex-wrap(wrap);
+
+		> .menu-item {
+			@include flex(0 0 auto);
+			max-width: 100%; /* Tell IE10/11 not to grow larger */
+			min-width: 0;
+			position: relative;
+		}
+
+		//* Submenu
+		> .menu-item > .sub-menu { 
+			position: absolute;
+			z-index: 99;
+			left: 0;
+		}
+	}
+
+	//* Default hide sub-menu
+	.sub-menu { display: none; }	
+
+	//* Show sub-menu on hover menu-item
+	.menu-item:hover > .sub-menu { display: block; }
+}
+
+/* Styling */
+#menu-primary {
+	background-color: $color-primary;
+
+	&, a {
+		color: $color-primary-contrast;
+	}
+
+	/* Top level menu-items */
+	.menu-items > .menu-item {
+			
+		/* Top level links */
+		> a {
+			padding: rem(14) rem(18);
+
+			&:hover {
+				background-color: rgba(black, 0.1);
+			}
+		}
+
+		/* Active */
+		&.current-menu-item,
+		&.current-menu-parent,
+		&.current-menu-ancestor {
+			> a {
+				background-color: rgba(black, 0.2);
+			}
+		}
+	}
+
+	//* Submenu
+	.sub-menu { 
+		padding: rem(6) 0 rem(8);
+		font-size: rem(15);
+
+		background-color: $color-secondary;
+		&, a {
+			color: $font-color;
+		}
+
+		.menu-item {
+			padding: 0 rem(18);
+
+			a {
+				padding: rem(6) 0;
+				white-space: nowrap;
+
+				&:hover {
+					margin: 0 rem(-18);
+					padding-left: rem(18);
+					padding-right: rem(18);
+					background-color: rgba(#000, 0.1);
+					border-top-color: transparent;
+				}
+			}
+
+		}
+
+		//* Selected menu item
+		.current-menu-item,
+		.current-menu-parent,
+		.current-menu-ancestor {
+			> a {
+				font-weight: $bold-weight;
+			}
+		}
+	}
+}
+

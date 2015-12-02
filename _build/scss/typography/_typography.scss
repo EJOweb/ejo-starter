@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------
+Main typography
+-------------------------------------------------------------------*/
+html {
+    font-size: $ejo-font-size / 16px * 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: $font-family;
+    color: $font-color;
+    line-height: $line-height;
+    font-weight: $normal-weight;
+}
+
