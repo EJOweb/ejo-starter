@@ -9,13 +9,14 @@ npm install gulp gulp-util gulp-rename gulp-concat gulp-sourcemaps gulp-sass gul
 - Cache
 - Redirect
 
-http://www.catswhocode.com/blog/10-useful-htaccess-snippets-to-have-in-your-toolbox
+http://www.catswhocode.com/blog/10-useful-htaccess-snippets-to-have-in-your-toolbox <br/>
 http://www.wpexplorer.com/htaccess-wordpress-security/
 
 # Wp-config
 
 Tip: add the following code to wp-config.php (Wordpress root folder)
 
+<pre lang="php"><code>
 /**
  * Limit number of revisions.
  *
@@ -42,3 +43,4 @@ if (WP_DEBUG) {
 	define('WP_DEBUG_LOG', true);
 	define('SAVEQUERIES', false); // Only activate when researching
 }
+</code></pre>
