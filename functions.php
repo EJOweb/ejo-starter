@@ -39,9 +39,8 @@ add_action( 'after_setup_theme', 'ejo_theme_setup', 5 );
  */
 function ejo_theme_setup() 
 {
-	//* Get & Set Version
-	$theme = wp_get_theme();
-	define( 'THEME_VERSION', $theme->get( 'Version' ) );
+	//* Set Version
+	define( 'THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 
 	//* Set paths to asset folders.
 	define( 'THEME_IMG_URI', trailingslashit( HYBRID_PARENT_URI ) . 'assets/images/' );
