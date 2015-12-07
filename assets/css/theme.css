@@ -1,5 +1,5 @@
 /* Reset
------------------------------------------------------------------- */
+============================================================================ */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -398,133 +398,8 @@ th {
   padding: 0;
 }
 
-/* Typography
------------------------------------------------------------------- */
-/*------------------------------------------------------------------
-Main typography
--------------------------------------------------------------------*/
-html {
-  font-size: 100%;
-}
-
-body,
-button,
-input,
-select,
-textarea {
-  font-family: georgia, serif;
-  color: #333;
-  line-height: 1.625;
-  font-weight: 400;
-}
-
-/*------------------------------------------------------------------
-Headings
--------------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-  font-family: verdana, serif;
-  font-weight: 400;
-  color: #333;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 1.125;
-}
-
-h2 {
-  font-size: 1.5rem;
-  line-height: 1.125;
-}
-
-h3 {
-  font-size: 1.25rem;
-  line-height: 1.125;
-}
-
-h4, h5, h6 {
-  font-size: 1rem;
-  line-height: 1.625;
-}
-
-/*------------------------------------------------------------------
-Vertical Rythm
--------------------------------------------------------------------*/
-p,
-ul,
-ol,
-dl,
-table,
-figure,
-address,
-blockquote,
-pre,
-code,
-object,
-hr,
-.gallery,
-audio,
-video,
-object,
-embed,
-iframe {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/*------------------------------------------------------------------
-Links
--------------------------------------------------------------------*/
-a {
-  transition: color 0.1s linear;
-  text-decoration: none;
-  color: #777;
-  border-bottom: 1px dotted #919191;
-}
-
-a:hover {
-  border-bottom: 1px solid #777;
-}
-
-/*------------------------------------------------------------------
-Font Styles
--------------------------------------------------------------------*/
-b, strong {
-  font-weight: 700;
-}
-
-b b, b strong, strong b, strong strong {
-  font-weight: 400;
-}
-
-i, em, mark, cite {
-  font-style: italic;
-}
-
-i i, i em, i mark, i cite, em i, em em, em mark, em cite, mark i, mark em, mark mark, mark cite, cite i, cite em, cite mark, cite cite {
-  font-style: normal;
-}
-
-/*------------------------------------------------------------------
-Blockquotes
--------------------------------------------------------------------*/
-blockquote {
-  font-style: italic;
-}
-
-blockquote i,
-blockquote em,
-blockquote cite {
-  font-style: normal;
-}
-
-/*------------------------------------------------------------------
-Code
--------------------------------------------------------------------*/
-/* Elements
------------------------------------------------------------------- */
+/* EJO Defaults
+============================================================================ */
 /* Box-sizing
 -------------------------------------------------------------------*/
 html {
@@ -533,12 +408,6 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
-}
-
-/* Body
--------------------------------------------------------------------*/
-body {
-  background-color: #fff;
 }
 
 /* Media
@@ -555,6 +424,100 @@ object,
 embed,
 iframe {
   max-width: 100%;
+}
+
+/* Links
+-------------------------------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+/* Lists
+-------------------------------------------------------------------*/
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+/* Tables
+-------------------------------------------------------------------*/
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* Buttons
+-------------------------------------------------------------------*/
+/* Typography
+============================================================================ */
+/* Main typography
+-------------------------------------------------------------------*/
+html {
+  font-size: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: georgia, serif;
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: 400;
+  color: #404040;
+}
+
+/*------------------------------------------------------------------
+Headings
+-------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+  color: #404040;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4, h5, h6 {
+  font-size: 1.125rem;
+}
+
+/* Elements
+============================================================================ */
+/* Body
+-------------------------------------------------------------------*/
+body {
+  background-color: #fff;
 }
 
 /* Links
@@ -579,19 +542,21 @@ a:hover, a:active {
   outline: 0;
 }
 
+/* Button link */
+/* Paragraphs
+-------------------------------------------------------------------*/
+p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Intro paragraph */
 /* Lists
 -------------------------------------------------------------------*/
-ul {
-  list-style: disc;
-}
-
-ol {
-  list-style: decimal;
-}
-
 ul, ol {
-  padding: 0;
-  margin: 0 0 0 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2.5rem;
 }
 
 ul ul, ul ol, ol ul, ol ol {
@@ -602,76 +567,104 @@ ul ul, ul ol, ol ul, ol ol {
 /* Tables
 -------------------------------------------------------------------*/
 table {
-  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 th {
   border-bottom: 2px solid #ccc;
-  text-align: left;
 }
 
 td {
   border-bottom: 1px solid #ccc;
 }
 
-tr,
-td,
-th {
-  vertical-align: middle;
+/* Media
+-------------------------------------------------------------------*/
+figure,
+audio,
+video,
+object,
+embed,
+iframe {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Horizontal Rule
+-------------------------------------------------------------------*/
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 1px dashed #ccc;
+}
+
+/* Blockquotes
+-------------------------------------------------------------------*/
+blockquote {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+blockquote i,
+blockquote em,
+blockquote cite {
+  font-style: normal;
+}
+
+/* Code
+-------------------------------------------------------------------*/
+pre {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Font Styles
+-------------------------------------------------------------------*/
+b, strong {
+  font-weight: 700;
+}
+
+b b, b strong, strong b, strong strong {
+  font-weight: 400;
+}
+
+i, em, mark, cite {
+  font-style: italic;
+}
+
+i i, i em, i mark, i cite, em i, em em, em mark, em cite, mark i, mark em, mark mark, mark cite, cite i, cite em, cite mark, cite cite {
+  font-style: normal;
 }
 
 /* Forms
 ------------------------------------------------------------------ */
-/* Fields
--------------------------------------------------------------------*/
-/**
- * Standardize all form elements
- */
-/* Make sure every form element has default line-height */
-input,
-select,
-textarea {
-  line-height: inherit;
-}
-
-/* Default style of form elements (except radio and checkbox) */
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select,
 textarea {
+  color: #666;
   border: 1px solid #ccc;
-  background-color: #fff;
-  box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
 }
 
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
 select:hover,
 textarea:hover {
-  border-color: #b3b3b3;
+  border-color: #ccc #bbb #aaa;
 }
 
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
 select:focus,
 textarea:focus {
-  border-color: #777;
-}
-
-input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
-textarea {
-  padding: 0.25rem 0.5rem;
+  color: #111;
+  border-color: #aaa #bbb #bbb;
 }
 
 select {
   padding: 0.4375rem 0.5rem 0.375rem;
-}
-
-.gform_wrapper .gf_list_inline ul {
-  border-left: 1px solid #ccc;
-}
-
-.gform_wrapper .gf_list_inline li {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #ccc;
-  border-left: none;
 }
 
 textarea {
@@ -679,62 +672,104 @@ textarea {
 }
 
 /* Style label of checked input */
-/**
- * Buttons
- */
-.button {
-  color: inherit;
-  border-bottom: none;
+input:checked + label {
+  text-decoration: underline;
 }
 
-.button:hover {
-  border-bottom: none;
+/* Gravity Forms */
+.gform_wrapper .gf_list_inline li {
+  padding: 0.3125rem 0.5rem;
 }
 
-.button,
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: #777;
-  color: #FFF;
-  display: inline-block;
-  width: auto;
-  font-weight: 700;
-  line-height: 1.625;
-  padding: 0.125rem 0.75rem;
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-.button + .button,
-.button + button,
-.button + input[type="button"],
-.button + input[type="reset"],
-.button + input[type="submit"],
-button + .button,
-button + button,
-button + input[type="button"],
-button + input[type="reset"],
-button + input[type="submit"],
-input[type="button"] + .button,
-input[type="button"] + button,
-input[type="button"] + input[type="button"],
-input[type="button"] + input[type="reset"],
-input[type="button"] + input[type="submit"],
-input[type="reset"] + .button,
-input[type="reset"] + button,
-input[type="reset"] + input[type="button"],
-input[type="reset"] + input[type="reset"],
-input[type="reset"] + input[type="submit"],
-input[type="submit"] + .button,
-input[type="submit"] + button,
-input[type="submit"] + input[type="button"],
-input[type="submit"] + input[type="reset"],
-input[type="submit"] + input[type="submit"] {
-  margin-left: 4px;
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Alignments
+============================================================================ */
+/*------------------------------------------------------------------
+Alignment
+-------------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5rem;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Media
+============================================================================ */
+.wp-caption {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075rem 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
 /* Accessibility
------------------------------------------------------------------- */
+============================================================================ */
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -752,7 +787,7 @@ input[type="submit"] + input[type="submit"] {
   color: #21759b;
   display: block;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 700;
   height: auto;
   left: 5px;
   line-height: normal;
@@ -769,258 +804,8 @@ input[type="submit"] + input[type="submit"] {
   outline: 0;
 }
 
-/* Alignments
------------------------------------------------------------------- */
-/*------------------------------------------------------------------
-Alignment
--------------------------------------------------------------------*/
-.alignleft {
-  float: left;
-  margin-right: 1.25rem;
-  margin-bottom: 0.75rem;
-}
-
-.alignright {
-  float: right;
-  margin-right: 1.25rem;
-  margin-bottom: 0.75rem;
-}
-
-.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-left: auto;
-}
-
-.alignnone {
-  float: none;
-}
-
-img.alignleft,
-img.alignright {
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  display: inline;
-}
-
-/* Layout
------------------------------------------------------------------- */
-#header,
-#main,
-#footer {
-  padding: 0 36px;
-}
-
-#header > .wrap,
-#main > .wrap,
-#footer > .wrap {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 960px;
-  min-width: 288px;
-}
-
-/* Site
------------------------------------------------------------------- */
-#header {
-  background-color: #777;
-  color: #FFF;
-}
-
-#header a {
-  color: inherit;
-  border-bottom: none;
-  color: #FFF;
-}
-
-#header a:hover {
-  border-bottom: none;
-}
-
-#header .site-title {
-  margin: 0;
-}
-
-#main {
-  background-color: #fff;
-}
-
-#footer > .wrap {
-  background-color: #EEE;
-  color: #666;
-}
-
-#footer a {
-  color: inherit;
-  border-bottom: none;
-  color: #666;
-}
-
-#footer a:hover {
-  border-bottom: none;
-}
-
-/* Navigation
------------------------------------------------------------------- */
-/* Defaults */
-#menu-primary ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-#menu-primary li, #menu-primary a {
-  display: block;
-}
-
-/* Structure */
-#menu-primary .menu-items {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-direction: row;
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  box-align: stretch;
-  -webkit-align-items: stretch;
-  -moz-align-items: stretch;
-  -ms-align-items: stretch;
-  -o-align-items: stretch;
-  align-items: stretch;
-  -ms-flex-align: stretch;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -o-justify-content: flex-start;
-  justify-content: flex-start;
-  -ms-flex-pack: start;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-#menu-primary .menu-items > .menu-item {
-  -webkit-box-flex: 0;
-  -moz-box-flex: 0;
-  box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -moz-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  max-width: 100%;
-  /* Tell IE10/11 not to grow larger */
-  min-width: 0;
-  position: relative;
-}
-
-#menu-primary .menu-items > .menu-item > .sub-menu {
-  position: absolute;
-  z-index: 99;
-  left: 0;
-}
-
-#menu-primary .sub-menu {
-  display: none;
-}
-
-#menu-primary .menu-item:hover > .sub-menu {
-  display: block;
-}
-
-/* Styling */
-#menu-primary {
-  background-color: #777;
-  /* Top level menu-items */
-}
-
-#menu-primary, #menu-primary a {
-  color: #FFF;
-}
-
-#menu-primary .menu-items > .menu-item {
-  /* Top level links */
-  /* Active */
-}
-
-#menu-primary .menu-items > .menu-item > a {
-  padding: 0.875rem 1.125rem;
-}
-
-#menu-primary .menu-items > .menu-item > a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-#menu-primary .menu-items > .menu-item.current-menu-item > a, #menu-primary .menu-items > .menu-item.current-menu-parent > a, #menu-primary .menu-items > .menu-item.current-menu-ancestor > a {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-#menu-primary .sub-menu {
-  padding: 0.375rem 0 0.5rem;
-  font-size: 0.9375rem;
-  background-color: #EEE;
-}
-
-#menu-primary .sub-menu, #menu-primary .sub-menu a {
-  color: #333;
-}
-
-#menu-primary .sub-menu .menu-item {
-  padding: 0 1.125rem;
-}
-
-#menu-primary .sub-menu .menu-item a {
-  padding: 0.375rem 0;
-  white-space: nowrap;
-}
-
-#menu-primary .sub-menu .menu-item a:hover {
-  margin: 0 -1.125rem;
-  padding-left: 1.125rem;
-  padding-right: 1.125rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-top-color: transparent;
-}
-
-#menu-primary .sub-menu .current-menu-item > a,
-#menu-primary .sub-menu .current-menu-parent > a,
-#menu-primary .sub-menu .current-menu-ancestor > a {
-  font-weight: 700;
-}
-
-/* Media
------------------------------------------------------------------- */
-/*------------------------------------------------------------------
-WP classes
--------------------------------------------------------------------*/
-.wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0;
-}
-
-/* Gravity Forms
------------------------------------------------------------------- */
+/* Gravity Forms Layout
+============================================================================ */
 /* Reset */
 .gform_wrapper ol,
 .gform_wrapper ul {
@@ -1411,4 +1196,171 @@ WP classes
 
 .gform_wrapper .gfield_error .gfield_label {
   color: #790000;
+}
+
+/* Layout
+============================================================================ */
+#header,
+#main,
+#footer {
+  padding: 0 36px;
+}
+
+#header > .wrap,
+#main > .wrap,
+#footer > .wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 720px;
+  min-width: 288px;
+}
+
+#header {
+  padding: 50px 0;
+  border-bottom: 1px solid #ccc;
+  /* Title */
+}
+
+#header .site-title,
+#header #site-description {
+  margin: 0;
+}
+
+#header .site-branding {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Structure */
+#menu-primary ul,
+#menu-primary ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#menu-primary li, #menu-primary a {
+  display: block;
+}
+
+#menu-primary .menu-items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#menu-primary .menu-items > .menu-item {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: 100%;
+  /* Tell IE10/11 not to grow larger */
+  min-width: 0;
+  position: relative;
+}
+
+#menu-primary .menu-items > .menu-item > .sub-menu {
+  position: absolute;
+  z-index: 99;
+  left: 0;
+}
+
+#menu-primary .sub-menu {
+  display: none;
+}
+
+#menu-primary .menu-item:hover > .sub-menu {
+  display: block;
+}
+
+/* Styling */
+#menu-primary {
+  /* Top level menu-items */
+}
+
+#menu-primary .menu-items > .menu-item {
+  /* Top level links */
+  /* Active */
+}
+
+#menu-primary .menu-items > .menu-item > a:hover {
+  text-decoration: underline;
+}
+
+#menu-primary .menu-items > .menu-item.current-menu-item > a, #menu-primary .menu-items > .menu-item.current-menu-parent > a, #menu-primary .menu-items > .menu-item.current-menu-ancestor > a {
+  text-decoration: underline;
+}
+
+#menu-primary .sub-menu {
+  font-size: 0.9375rem;
+  background-color: #fff;
+  padding: 0.5rem 0;
+}
+
+#menu-primary .sub-menu .menu-item a {
+  white-space: nowrap;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+#menu-primary .sub-menu .menu-item a:hover {
+  text-decoration: underline;
+}
+
+#menu-primary .sub-menu .current-menu-item > a,
+#menu-primary .sub-menu .current-menu-parent > a,
+#menu-primary .sub-menu .current-menu-ancestor > a {
+  font-weight: 700;
+}
+
+#main {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+#content .entry-title {
+  margin-top: 0;
 }

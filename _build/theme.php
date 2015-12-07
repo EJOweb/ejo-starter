@@ -22,7 +22,7 @@ add_action( 'widgets_init', 'ejo_register_sidebars', 5 );
 add_action( 'wp_print_styles', 'ejo_remove_styles_and_scripts', 99 );
 
 //* Add custom styles & scripts
-add_action( 'wp_enqueue_scripts', 'ejo_add_styles_and_scripts', 5 );
+add_action( 'wp_enqueue_scripts', 'ejo_add_styles_and_scripts', 20 );
 
 
 /**

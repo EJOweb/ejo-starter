@@ -5,61 +5,52 @@
 
 // Mixins
 @import "mixins/mixins";
+@import "mixins/mixins-flexbox";
+@import "mixins/mixins-reset-styles";
 
 // Theme Variables
 @import "variables/colors";
 @import "variables/typography";
-@import "variables/structure";
-@import "variables/other";
+@import "variables/grid";
+@import "variables/image-path";
 
 /* Reset
------------------------------------------------------------------- */
+============================================================================ */
 @import "vendors/normalize";
 
+/* EJO Defaults
+============================================================================ */
+@import "vendors/ejo-defaults";
+
 /* Typography
------------------------------------------------------------------- */
+============================================================================ */
 @import "typography/typography";
-@import "typography/headings";
-@import "typography/copy";
 
 /* Elements
------------------------------------------------------------------- */
+============================================================================ */
 @import "elements/elements";
 
-/* Forms
------------------------------------------------------------------- */
-@import "forms/fields";
-@import "forms/buttons";
-
-/* Accessibility
------------------------------------------------------------------- */
-@import "modules/accessibility";
-
 /* Alignments
------------------------------------------------------------------- */
+============================================================================ */
 @import "modules/alignments";
 
-/* Layout
------------------------------------------------------------------- */
-@import "layout/grid";
-
-/* Site
------------------------------------------------------------------- */
-@import "site/header";
-@import "site/main";
-@import "site/sidebar";
-@import "site/footer";
-
-/* Navigation
------------------------------------------------------------------- */
-@import "navigation/primary-navigation";
-
 /* Media
------------------------------------------------------------------- */
-@import "media/galleries";
-@import "media/captions";
-@import "media/smileys";
+============================================================================ */
+@import "modules/media/galleries";
+@import "modules/media/captions";
+@import "modules/media/smileys";
 
-/* Gravity Forms
------------------------------------------------------------------- */
+/* Accessibility
+============================================================================ */
+@import "modules/accessibility";
+
+/* Gravity Forms Layout
+============================================================================ */
 @import "vendors/gravity-forms/setup";
+
+/* Layout
+============================================================================ */
+@import "layout/grid";
+@import "layout/header/header";
+@import "layout/main/main";
+@import "layout/footer/footer";

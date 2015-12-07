@@ -1,8 +1,7 @@
-/*------------------------------------------------------------------
-Main typography
+/* Main typography
 -------------------------------------------------------------------*/
 html {
-    font-size: $ejo-font-size / 16px * 100%;
+    font-size: $em-base / 16px * 100%;
 }
 
 body,
@@ -10,9 +9,11 @@ button,
 input,
 select,
 textarea {
-    font-family: $font-family;
-    color: $font-color;
-    line-height: $line-height;
-    font-weight: $normal-weight;
+    font-family: $font__family;
+    font-size: 1rem;
+    line-height: $font__line-height;
+    font-weight: $font__weight-normal;
+    color: $color__text;
 }
 
+@import "headings";

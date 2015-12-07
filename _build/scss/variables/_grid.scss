@@ -1,0 +1,23 @@
+$width__max: 720px;
+$width__min: 288px;
+$width__laptop: 880px;
+$width__tablet: 720px;
+$width__smartphone: 560px;
+$width__barebones: 460px;
+
+$breakpoint__laptop: 880px;
+$breakpoint__tablet: 720px;
+$breakpoint__smartphone: 560px;
+$breakpoint__barebones: 400px;
+
+$grid__gutter: 36px;
+$grid__gutter-pct: ( $grid__gutter / $width__max ) * 100% ;
+
+// Column widths
+$grid__column-one-half: (100% - ($grid__gutter-pct * 1)) / 2;
+$grid__column-one-third: (100% - ($grid__gutter-pct * 2)) / 3;
+$grid__column-two-third: $grid__column-one-third * 2 + $grid__gutter-pct;
+$grid__column-one-fourth: (100% - ($grid__gutter-pct * 3)) / 4;
+$grid__column-three-fourth: $grid__column-one-fourth * 3 + $grid__gutter-pct;
+$grid__column-one-sixth: (100% - ($grid__gutter-pct * 5)) / 6;
+$grid__column-five-sixth: $grid__column-one-sixth * 5 + $grid__gutter-pct;

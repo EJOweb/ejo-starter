@@ -1,12 +1,12 @@
 #header,
 #main,
 #footer {
-	padding: 0 $gutter; // Geen percentage, want is relatief ten opziche van parent
+	padding: 0 $grid__gutter; // Geen percentage, want is relatief ten opziche van parent
 	> .wrap {
 		margin: 0 auto;
 		width: 100%;
-		max-width: $max-width;
-		min-width: $min-width;
+		max-width: $width__max;
+		min-width: $width__min;
 	}
 }
 

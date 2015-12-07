@@ -3,30 +3,20 @@ Alignment
 -------------------------------------------------------------------*/
 
 .alignleft {
-    float:        left;
-    margin-right: 1.25rem;
-    margin-bottom: 0.75rem;
+    display: inline;
+    float: left;
+    margin-right: 1.5rem;
 }
 
 .alignright {
-    float:       right;
-    margin-right: 1.25rem;
-    margin-bottom: 0.75rem;
+    display: inline;
+    float: right;
+    margin-left: 1.5rem;
 }
 
 .aligncenter {
+    clear: both;
     display: block;
     margin-left: auto;
-    margin-left: auto;
-}
-
-.alignnone {
-    float: none;
-}
-
-img.alignleft, 
-img.alignright {
-    border-radius: $border-radius;
-    border: $border;
-    display: inline;
+    margin-right: auto;
 }
