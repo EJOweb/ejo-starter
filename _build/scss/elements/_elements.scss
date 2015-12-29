@@ -1,3 +1,7 @@
+/* Vertical Rhythm
+-------------------------------------------------------------------*/
+@import "vertical-rhythm";
+
 /* Body
 -------------------------------------------------------------------*/
 body {
@@ -28,16 +32,41 @@ a {
 
 /* Button link */
 a.button {
+    background-color: $color__background-button;
+    color: $color__text-button;
+    padding: rem(9px) rem(14px) rem(10px);
+    font-weight: $font__weight-bold;
+    display: inline-block;
+    line-height: 1;
 
+    &:hover {
+        background-color: $color__background-button-hover;
+        padding-top: rem(10px);
+        padding-bottom: rem(9px);
+    }
+}
+
+/* Images
+-------------------------------------------------------------------*/
+a.image-wrap {
+    overflow: hidden;
+
+    img {
+        display: block;
+        @include transition( all 0.4s ease );
+    }
+
+    &:hover {
+        img {
+            @include transform( scale(1.1) );
+        }
+    }
 }
 
 /* Paragraphs
 -------------------------------------------------------------------*/
 
-p {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+p {}
 
 /* Intro paragraph */
 p.intro {
@@ -48,30 +77,41 @@ p.intro {
 -------------------------------------------------------------------*/
 
 ul, ol {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
     margin-left: 2.5rem;
 
     ul, ol {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
+
+    li {
+        margin-bottom: 0.25rem;
+    }
+}
+
+.checklist {
+    margin-left: 2.5rem;
+    list-style: none;
+
+    li {
+        &:before {
+            @include icon(fa-check);
+            margin-right: 0.5em;
+        }
+    }
 }
 
 /* Tables
 -------------------------------------------------------------------*/
 
-table {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+table {}
 
 th {
-    border-bottom: 2px solid $color__border;
+    padding: 0.5rem 0;
 }
 
 td {
-    border-bottom: 1px solid $color__border;
+    padding: 0.5rem 0;
 }
 
 /* Media
@@ -82,10 +122,8 @@ audio,
 video,
 object,
 embed,
-iframe {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+iframe {}
+
 
 /* Horizontal Rule
 -------------------------------------------------------------------*/
@@ -94,15 +132,18 @@ hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border: 0;
-    border-top: 1px dashed $color__border;
+    height: 4px;
+    background: transparent url($path__images + 'heading-bg.png') repeat-x 0 center;
 }
 
 /* Blockquotes
 -------------------------------------------------------------------*/
 
 blockquote {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    border-left: 6px solid $color__border;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 0 0 1.5rem;
     font-style: italic;
 
     i,
@@ -118,12 +159,9 @@ blockquote {
 
 code {}
 
-pre {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+pre {}
 
-    pre code {}
+pre code {}
 
 /* Font Styles
 -------------------------------------------------------------------*/
@@ -146,6 +184,5 @@ i, em, mark, cite {
 
 /* Forms
 ------------------------------------------------------------------ */
-@import "forms/fields";
-@import "forms/buttons";
-
+@import "form-fields";
+@import "buttons";

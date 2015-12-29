@@ -1,0 +1,183 @@
+//* Structure
+#comments .comment article,
+.comment-respond {
+	padding-left: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	@include media($barebones) {
+		padding-left: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+//* Nesting
+#comments .children,
+#comments .comment-respond {
+	margin-left: 2rem;
+	@include media($smartphone) {
+		margin-left: 1rem;
+	}
+}	
+
+//*comments
+#comments {
+	position: relative;
+
+	.comments-title {
+		font-size: $small-font-size;
+		text-transform: uppercase;
+		font-family: $base-font-family;
+		line-height: $base-line-height;
+		font-weight: $normal-weight;
+		margin-bottom: 2px;
+		float: right;
+	}
+
+	.comment-list {
+		clear: both;
+	}
+
+	.comment {
+		article {
+			border-left: $base-border;
+			border-top: $base-border;
+			border-bottom: $base-border;
+			margin-bottom: -1px;
+		}
+		
+		.comment-meta {
+			margin-bottom: 1em;
+			font-size: rem(15);
+			line-height: 1;
+
+			.comment-author {
+				font-size: $base-font-size;
+				font-family: $heading-font-family;
+				font-weight: $bold-weight;
+				font-style: normal;
+				margin-right: 1px;
+			}
+
+			.comment-published {
+				margin: 0 1px;
+			}
+
+			.comment-reply-link {
+				margin: 0 1px;
+				&:before {
+					// @include icon('fa-reply');
+					// padding-right: 4px;
+				}
+			}
+		}
+
+		.comment-content {
+			font-size: $small-font-size;
+			line-height: 1.625;
+
+			p:not(:last-child) {
+				margin-bottom: 0.75em;
+			}
+		}
+
+		//* Simple edit textarea
+		textarea {
+			box-sizing: border-box;
+			border-bottom: $base-border;
+			padding: rem(5) 0;
+			display:block;
+
+			&:focus {
+				border-bottom-width: 2px;
+				border-color: $color-primary;
+				margin-bottom: -1px;
+			}
+		}
+	}
+}
+
+//* Reply styling
+.comment-respond {
+	border-left: $base-border;
+	border-top: $base-border;
+	border-bottom: $base-border;
+	margin-bottom: -1px;
+	position: relative;
+
+	.comment-reply-title {
+		margin-bottom: 2rem;
+	}
+
+	#cancel-comment-reply-link {
+		font-family: $base-font-family;
+		font-weight: $bold-weight;
+		position: absolute;
+		right: 0;
+		margin-top: 2px;
+
+		.fa:hover {
+			color: $color-primary-active;
+		}
+	}
+
+	.comment-form-legit,
+	.comment-form-author,
+	.comment-form-email {
+		position: relative;
+		margin-bottom: 2rem;
+	}
+
+	//* Hide spamfield
+	.comment-form-legit {
+		display: none;
+	}
+
+	.comment-form-comment {
+		position: relative;
+		margin-bottom: 1.5rem;
+	}
+
+	.form-submit {
+		margin-bottom: 0;
+	}
+
+	label {
+		color: $color-ui;
+		position:absolute;
+		pointer-events: none;
+		left: 0px;
+		top: 2px;
+		transition:0.2s ease all; 
+		-moz-transition:0.2s ease all; 
+		-webkit-transition:0.2s ease all;
+
+		&.superscript,
+		.show-if-no-js & {
+			top: - rem(18);
+			font-size: rem(14);
+			// color: inherit;
+			// font-weight: $bold-weight;
+		}
+	}
+}
+
+#{$all-text-inputs},
+textarea {
+	box-sizing: border-box;
+	border-bottom: $base-border;
+	padding: rem(5) 0;
+	display:block;
+
+	&:focus {
+		border-bottom-width: 2px;
+		border-color: $color-primary;
+		margin-bottom: -1px;
+	}
+}
+
+//* Textarea margin-correction (haven't found the reason yet)
+textarea:focus {
+	margin-bottom: 0;
+}

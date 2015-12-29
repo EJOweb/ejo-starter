@@ -1,0 +1,19 @@
+/* Main typography
+-------------------------------------------------------------------*/
+html {
+    font-size: $em-base / 16px * 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: $font__family;
+    font-size: 1rem;
+    line-height: $font__line-height;
+    font-weight: $font__weight-normal;
+    color: $color__text;
+}
+
+@import "headings";

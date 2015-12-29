@@ -1,0 +1,39 @@
+#container {
+	@include display(flex);
+	@include flex-direction(column);
+	@include align-items(stretch);
+	min-height: 100%;
+}
+
+#header {}
+
+#main {}
+
+#footer {
+	@include flex-grow(1);
+	@include flex-shrink(1);
+	@include flex-basis(auto);
+}
+
+#header > .wrap,
+#menu-primary > .wrap,
+#main > .wrap,
+#footer > .wrap {
+	max-width: $width__site-max;
+	margin: 0 auto;
+}
+
+#content {
+}
+
+#sidebar-primary {
+}
+
+@include media(tablet) {
+}
+
+@include media(phablet) {
+}
+
+@include media(smartphone) {
+}

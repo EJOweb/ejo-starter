@@ -1,0 +1,147 @@
+/* Responsiveness */
+#menu-primary-mobile {
+	display: none;
+	@include media(tablet) {
+		display: block;
+	}
+}
+
+/* Toggle */
+.menu-toggle {
+	text-transform: uppercase;
+	padding: rem(15) rem(20) rem(15);
+	line-height: 1;
+	text-align: center;
+	cursor: pointer;
+	font-size: rem(20);
+
+	&:before { 
+		@include icon('fa-bars');
+		padding-right: 5px;
+	}
+
+	&.expanded {
+		&:before { 
+			content: $fa-var-remove; 
+			padding-right: 6px;
+		}
+	}
+
+	background-color: $color__background-menu;
+	color: $color__text-menu-item;
+
+	&:hover {
+		background-color: $color__background-menu-item-hover;
+		color: $color__text-menu-item-hover;
+	}
+}
+
+/* Reset */
+#menu-primary-mobile {
+	ul { @include reset-list-style; }
+	a {	@include reset-link-style; }
+
+	li,	a {
+		display: block;
+	}
+}
+
+/* Structure */
+#menu-primary-mobile {
+	.menu-items {
+		display: none;
+		text-align: center;
+
+		@include media(barebones) {
+			text-align: left;
+		}
+	}
+}
+
+/* Structure */
+#menu-primary-mobile {
+	background-color: $color__background-menu;
+	&, a { color: $color__text-menu; }
+
+	.menu-items {
+		border-top: 1px solid $color__border-menu;
+	}
+
+	.menu-item {
+
+	}
+
+	a {
+		color: inherit;
+	}
+
+	/* Top level */
+	.menu-items > .menu-item {
+		background-color: $color__background-menu-item;
+		border-bottom: 1px solid $color__border-menu;
+		position: relative;
+
+		> a {
+			padding: 15px 20px;
+
+			&:hover {
+				background-color: $color__background-menu-item-hover;
+				color: $color__text-menu-item-hover;
+			}
+		}
+
+		&.current-menu-ancestor > a,
+		&.current-menu-item > a {
+			background-color: $color__background-menu-item-selected;
+			color: $color__text-menu-item-selected;
+		}
+
+		&.expanded {
+
+			a {
+				&:hover {
+					background-color: $color__background-menu-item-hover;
+				}
+			}
+		}
+	}	
+
+	.sub-menu {
+		display: none;
+		padding: 2px 12px 10px;
+
+		.menu-item{
+			&:first-child { border-top: none; }
+
+			a {
+				padding: 8px 20px;
+				font-size: rem(14px);
+
+				&:hover {
+					background-color: $color__background-submenu-item-hover;
+					color: $color__text-submenu-item-hover;
+				}
+			}		
+
+			&.current-menu-item { 
+				background-color: $color__background-submenu-item-selected; 
+				color: $color__text-submenu-item-selected;
+			}
+		}
+	}
+
+	.touch-button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		text-align: center;
+		cursor: pointer;
+		padding: 15px 20px;
+		background-color: rgba(black, 0.2);
+		color: #fff;
+
+		&:hover {
+			background-color: rgba(black, 0.3);
+		}
+	}
+}

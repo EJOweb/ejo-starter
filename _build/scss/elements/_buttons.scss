@@ -1,0 +1,29 @@
+/* Button link */
+a.button {
+    background-color: $color__background-button;
+    color: $color__text-button;
+    padding: 9px 14px 10px;
+    font-weight: $font__weight-bold;
+    display: inline-block;
+    line-height: 1;
+
+    &:hover {
+        background-color: darken($color__background-button, 5%);
+    }
+}
+
+a.button.alt {
+    background-color: $color__background-button-alt;
+    color: $color__text-button-alt;
+
+    &:hover {
+        background-color: darken($color__background-button-alt, 3%);
+    }
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@extend a.button;
+}

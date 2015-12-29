@@ -11,8 +11,8 @@
 // Theme Variables
 @import "variables/colors";
 @import "variables/typography";
-@import "variables/grid";
-@import "variables/image-path";
+@import "variables/structure";
+@import "variables/misc";
 
 /* Reset
 ============================================================================ */
@@ -30,9 +30,16 @@
 ============================================================================ */
 @import "elements/elements";
 
-/* Alignments
+/* Other
 ============================================================================ */
+@import "modules/branding";
+@import "modules/titles";
+@import "modules/navigation";
+@import "modules/navigation-mobile";
+@import "modules/breadcrumbs";
+@import "modules/social-media";
 @import "modules/alignments";
+@import "modules/gravity-forms/setup";
 
 /* Media
 ============================================================================ */
@@ -44,13 +51,10 @@
 ============================================================================ */
 @import "modules/accessibility";
 
-/* Gravity Forms Layout
+/* Structure
 ============================================================================ */
-@import "vendors/gravity-forms/setup";
-
-/* Layout
-============================================================================ */
-@import "layout/grid";
-@import "layout/header/header";
-@import "layout/main/main";
-@import "layout/footer/footer";
+@import "structure/site";
+@import "structure/header";
+@import "structure/content";
+@import "structure/sidebar-primary";
+@import "structure/footer";

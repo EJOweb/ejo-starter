@@ -1,26 +1,29 @@
 // Remove list styling
 @mixin reset-list-style() {
-	ul,
-	ol {
-		padding: 0;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	li {
 		margin: 0;
-		list-style-type: none;
 	}
 }
 
 // Remove table styling
 @mixin reset-table-style() {
-	ul,
-	ol {
-		padding: 0;
-		margin: 0;
-		list-style-type: none;
-	}
 }
 
 // Remove link styling
 @mixin reset-link-style() {
-	a {
+	color: $color__text;
+}
 
-	}
+// Remove heading styling
+@mixin reset-heading-style() {
+	// font-family: $font__family-heading;
+	// font-weight: $font__weight-normal;
+	font-size: $font__size;
+	line-height: $font__line-height;
+	margin-top: 0;
+	margin-bottom: 0;
 }

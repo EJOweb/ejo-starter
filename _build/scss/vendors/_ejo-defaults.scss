@@ -1,3 +1,6 @@
+// Description: Interwebsite style defaults of EJOweb
+// Version: 1.0.1
+
 /* Box-sizing
 -------------------------------------------------------------------*/
 
@@ -12,6 +15,21 @@ html { // http://bit.ly/1qk2tVR
         box-sizing: inherit;
     }
 }
+
+/* Flexbox
+-------------------------------------------------------------------*/
+
+/* Fix flexbox image problem */
+* {
+    min-width: 0;
+    min-height: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
 
 /* Media
 -------------------------------------------------------------------*/
@@ -66,9 +84,23 @@ th {
 /* Buttons
 -------------------------------------------------------------------*/
 
-// button,
-// input[type="button"],
-// input[type="reset"],
-// input[type="submit"] {
-// 	line-height: 1;
-// }
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	line-height: 1;
+    border: none;
+}
+
+/* Code
+-------------------------------------------------------------------*/
+pre {
+    // word-wrap: break-word; 
+    white-space: pre-wrap; 
+}
+
+/* Blockquote
+-------------------------------------------------------------------*/
+blockquote {
+    margin: 0;
+}

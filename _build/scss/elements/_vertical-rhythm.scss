@@ -1,0 +1,10 @@
+p,
+ul, ol,
+table,
+figure, audio, video, object, embed, iframe,
+hr,
+blockquote,
+pre {
+    margin-top: 0;
+    margin-bottom: $vertical__space;
+}

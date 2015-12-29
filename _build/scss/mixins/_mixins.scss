@@ -3,13 +3,16 @@
 
 	//* Check for breakpoint names
 	@if $width == tablet {
-		$breakpoint_width: $desktop-breakpoint;
+		$breakpoint_width: $width__breakpoint-tablet;
+	}
+	@else if $width == phablet {
+		$breakpoint_width: $width__breakpoint-phablet;
 	}
 	@else if $width == smartphone {
-		$breakpoint_width: $tablet-breakpoint;
+		$breakpoint_width: $width__breakpoint-smartphone;
 	}
 	@else if $width == barebones {
-		$breakpoint_width: $smartphone-breakpoint;
+		$breakpoint_width: $width__breakpoint-barebones;
 	}
 	@else {
 		$breakpoint_width: $width;

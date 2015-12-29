@@ -1,0 +1,42 @@
+#{$all-text-inputs},
+select,
+textarea {
+	color: $color__text-form-field;
+	border: 1px solid $color__border-form-field;
+	border-radius: 3px;	
+	padding: rem(4) rem(8);
+	background-color: $color__background-form-field;
+
+	&:hover {
+		border-color: $color__border-form-field-hover;
+	}
+
+	&:focus {
+		color: $color__text-form-field-focus;
+		border-color: $color__border-form-field-focus;
+	}
+}
+
+select {
+	padding: rem(7) rem(8) rem(6);
+}
+
+textarea {
+	resize: vertical;
+}
+
+/* Style label of checked input */
+input:checked + label {
+	text-decoration: underline;
+}
+
+/* Gravity Forms */
+.gform_wrapper .gf_list_inline {
+	li {
+		padding: rem(5) rem(8);
+	}
+	input + label {
+
+	}
+}
+

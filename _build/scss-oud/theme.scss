@@ -1,0 +1,56 @@
+// Resources
+@import "vendors/bourbon/bourbon";
+@import "vendors/icons";
+@import "vendors/social-media";
+
+// Mixins
+@import "mixins/mixins";
+@import "mixins/mixins-flexbox";
+@import "mixins/mixins-reset-styles";
+
+// Theme Variables
+@import "variables/colors";
+@import "variables/typography";
+@import "variables/grid";
+@import "variables/image-path";
+
+/* Reset
+============================================================================ */
+@import "vendors/normalize";
+
+/* EJO Defaults
+============================================================================ */
+@import "vendors/ejo-defaults";
+
+/* Typography
+============================================================================ */
+@import "typography/typography";
+
+/* Elements
+============================================================================ */
+@import "elements/elements";
+
+/* Alignments
+============================================================================ */
+@import "modules/alignments";
+
+/* Media
+============================================================================ */
+@import "modules/media/galleries";
+@import "modules/media/captions";
+@import "modules/media/smileys";
+
+/* Accessibility
+============================================================================ */
+@import "modules/accessibility";
+
+/* Gravity Forms Layout
+============================================================================ */
+@import "vendors/gravity-forms/setup";
+
+/* Layout
+============================================================================ */
+@import "layout/grid";
+@import "layout/header/header";
+@import "layout/main/main";
+@import "layout/footer/footer";

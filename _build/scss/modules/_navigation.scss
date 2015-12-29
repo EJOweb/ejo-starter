@@ -1,0 +1,112 @@
+/* Responsiveness */
+#menu-primary {
+	@include media(tablet) {
+		display: none;
+	}
+}
+
+/* Reset */
+#menu-primary {
+	ul { @include reset-list-style; }
+	a {	@include reset-link-style; }
+
+	li,	a {
+		display: block;
+	}
+}
+
+/* Structure */
+#menu-primary {
+	.menu-items {
+		@include flex-row();
+		@include justify-content(flex-start);
+		@include flex-wrap(wrap);
+		
+		> .menu-item {
+			@include flex(0 1 auto);
+			min-width: 0;
+		}
+
+		//* Submenu
+		> .menu-item > .sub-menu { 
+			position: absolute;
+			z-index: 99;
+			max-width: 300px;
+		}
+	}
+
+	//* Default hide sub-menu
+	.sub-menu { display: none; }	
+
+	//* Show sub-menu on hover menu-item
+	.menu-item:hover > .sub-menu { display: block; }
+}
+
+/* Styling */
+#menu-primary {
+	background-color: $color__background-menu;
+	&, a {
+		color: $color__text-menu-item;
+	}
+	font-family: $font__family-menu;
+	line-height: $font__line-height-menu;
+	// font-size: $font__size-large;
+
+	/* Top level menu-items */
+	.menu-items > .menu-item {
+			
+		/* Top level links */
+		> a {
+			padding: rem(12px) rem(18px) rem(13px);
+			text-align: center;
+		}
+
+		&:hover > a {
+			background-color: $color__background-menu-item-hover;
+			color: $color__text-menu-item-hover;
+		}
+
+		/* Active */
+		&.current-menu-item,
+		&.current-menu-parent,
+		&.current-menu-ancestor {
+			> a {
+				background-color: $color__background-menu-item-selected;
+				color: $color__text-menu-item-selected;
+			}
+		}
+	}
+
+	//* Submenu
+	.sub-menu { 
+		font-size: rem($em-base - 1px);
+		background-color: $color__background-submenu;
+		&, a {
+			color: $color__text-submenu-item;
+		}
+
+		.menu-item {
+			a {
+				padding: rem(8px) rem(18px) rem(9px);
+			}
+
+			&:last-child a {
+				border-bottom: none;
+			}
+
+			&:hover > a {
+				background-color: $color__background-submenu-item-hover;
+				color: $color__text-submenu-item-hover;
+			}
+
+			//* Selected menu item
+			&.current-menu-item,
+			&.current-menu-parent,
+			&.current-menu-ancestor {
+				> a {
+					font-weight: $font__weight-bold;
+				}
+			}
+		}
+	}
+}

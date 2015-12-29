@@ -1,0 +1,20 @@
+$width__site-max: 960px;
+$width__site-min: 300px;
+
+$width__breakpoint-tablet: 1000px;
+$width__breakpoint-phablet: 720px;
+$width__breakpoint-smartphone: 600px;
+$width__breakpoint-barebones: 480px;
+
+$width__gutter: 36px;
+$width__gutter-pct: ( $width__gutter / $width__site-max ) * 100%;
+$width__gutter-smartphone: 24px;
+
+// Column widths
+$width__column-one-half: (100% - ($width__gutter-pct * 1)) / 2;
+$width__column-one-third: (100% - ($width__gutter-pct * 2)) / 3;
+$width__column-two-third: $width__column-one-third * 2 + $width__gutter-pct;
+$width__column-one-fourth: (100% - ($width__gutter-pct * 3)) / 4;
+$width__column-three-fourth: $width__column-one-fourth * 3 + $width__gutter-pct;
+$width__column-one-sixth: (100% - ($width__gutter-pct * 5)) / 6;
+$width__column-five-sixth: $width__column-one-sixth * 5 + $width__gutter-pct;
