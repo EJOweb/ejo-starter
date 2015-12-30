@@ -21,7 +21,8 @@ $font__line-height-pre: 1.6;
 // Font Family
 $font__family: Georgia, serif;
 $font__family-heading: Verdana, sans-serif;
-$font__family-menu: Verdana, sans-serif;
+$font__family-menu: $font__family-heading;
+$font__family-button: $font__family-heading;
 $font__family-code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__family-pre: "Courier 10 Pitch", Courier, monospace;
 

@@ -30,21 +30,6 @@ a {
     }
 }
 
-/* Button link */
-a.button {
-    background-color: $color__background-button;
-    color: $color__text-button;
-    padding: rem(9px) rem(14px) rem(10px);
-    font-weight: $font__weight-bold;
-    display: inline-block;
-    line-height: 1;
-
-    &:hover {
-        background-color: $color__background-button-hover;
-        padding-top: rem(10px);
-        padding-bottom: rem(9px);
-    }
-}
 
 /* Images
 -------------------------------------------------------------------*/
@@ -129,11 +114,13 @@ iframe {}
 -------------------------------------------------------------------*/
 
 hr {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: $vertical__space + 0.75em;
+    margin-bottom: $vertical__space + 0.75em;
+    margin-left: auto;
+    margin-right: auto;
     border: 0;
-    height: 4px;
-    background: transparent url($path__images + 'heading-bg.png') repeat-x 0 center;
+    height: 1px;
+    background-color: $color__border;
 }
 
 /* Blockquotes

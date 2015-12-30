@@ -19,7 +19,7 @@
 #menu-primary {
 	.menu-items {
 		@include flex-row();
-		@include justify-content(flex-start);
+		@include justify-content(center);
 		@include flex-wrap(wrap);
 		
 		> .menu-item {
@@ -57,7 +57,7 @@
 			
 		/* Top level links */
 		> a {
-			padding: rem(12px) rem(18px) rem(13px);
+			padding: rem(16px) rem(18px) rem(17px);
 			text-align: center;
 		}
 
@@ -79,6 +79,7 @@
 
 	//* Submenu
 	.sub-menu { 
+		padding: rem(12) rem(18) rem(16);
 		font-size: rem($em-base - 1px);
 		background-color: $color__background-submenu;
 		&, a {
@@ -86,8 +87,11 @@
 		}
 
 		.menu-item {
+			+ .menu-item {
+				margin-top: 10px;
+			}
+
 			a {
-				padding: rem(8px) rem(18px) rem(9px);
 			}
 
 			&:last-child a {
@@ -95,8 +99,7 @@
 			}
 
 			&:hover > a {
-				background-color: $color__background-submenu-item-hover;
-				color: $color__text-submenu-item-hover;
+				text-decoration: underline;
 			}
 
 			//* Selected menu item

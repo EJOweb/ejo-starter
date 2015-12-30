@@ -23,6 +23,7 @@ select {
 
 textarea {
 	resize: vertical;
+	min-height: 100px;
 }
 
 /* Style label of checked input */
@@ -33,7 +34,8 @@ input:checked + label {
 /* Gravity Forms */
 .gform_wrapper .gf_list_inline {
 	li {
-		padding: rem(5) rem(8);
+		// padding: rem(5) rem(8);
+		margin: rem(5) rem(16) rem(5) 0;
 	}
 	input + label {
 

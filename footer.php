@@ -4,9 +4,7 @@
 		<footer <?php hybrid_attr( 'footer' ); ?>>
 			<div class="wrap">
 
-				<!-- <a id="toTop">Naar Boven</a> -->
-				Footer <i>Moet nog uitwerkt worden</i>
-				<?php //dynamic_sidebar( 'footer-widgets' ); // Displays the footer-widgets sidebar. ?>
+				<a id="toTop">Naar Boven</a>
 
 			</div><!-- .wrap -->
 		</footer><!-- #footer -->

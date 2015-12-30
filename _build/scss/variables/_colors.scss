@@ -1,8 +1,8 @@
 // Backgrounds
 $color__background-body: #ffffff;
-$color__background-header: #ffffff;
-$color__background-footer: #f5f5f5;
-$color__background-button: #333;
+$color__background-header: #607d8b;
+$color__background-footer: #eceff1;
+$color__background-button: #546e7a;
 $color__background-button-hover: darken($color__background-button, 5%);
 $color__background-button-alt: $color__background-button;
 $color__background-button-alt-hover: $color__background-button-hover;
@@ -11,32 +11,34 @@ $color__background-hr: #ccc;
 $color__background-screenreader: #f1f1f1;
 
 // Font colors
-$color__text: #333;
-$color__text-footer: #333;
+$color__text: #263238;
+$color__text-header: #fff;
+$color__text-footer: #263238;
 $color__text-button: #fff;
 $color__text-button-alt: #fff;
 $color__text-form-field: #666;
 $color__text-form-field-focus: #111;
 $color__text-screenreader: #21759b;
-$color__link: #333;
-$color__link-visited: #333;
-$color__link-hover: #333;
+$color__link: #263238;
+$color__link-visited: #263238;
+$color__link-hover: #263238;
 
 // Borders
 $color__border: #ccc;
+$color__border-menu: #607d8b;
 $color__border-form-field: #ccc;
 $color__border-form-field-hover: #ccc;
 $color__border-form-field-focus: #ccc;
 
 // Menu
-$color__background-menu: #333;
+$color__background-menu: #546e7a;
 $color__background-menu-item: transparent;
-$color__background-menu-item-hover: #444;
-$color__background-menu-item-selected: #111;
-$color__background-submenu: #444;
+$color__background-menu-item-hover: #455a64;
+$color__background-menu-item-selected: #455a64;
+$color__background-submenu: #455a64;
 $color__background-submenu-item: transparent;
-$color__background-submenu-item-hover: #555;
-$color__background-submenu-item-selected: #222;
+$color__background-submenu-item-hover: #607d8b;
+$color__background-submenu-item-selected: #607d8b;
 $color__text-menu: #fff;
 $color__text-menu-item: #fff;
 $color__text-menu-item-hover: #fff;
@@ -45,4 +47,3 @@ $color__text-submenu: #fff;
 $color__text-submenu-item: #fff;
 $color__text-submenu-item-hover: #fff;
 $color__text-submenu-item-selected: #fff;
-$color__border-menu: #666;

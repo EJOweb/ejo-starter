@@ -1,5 +1,7 @@
 <?php get_header(); // Loads the header.php template. ?>
 
+<?php //hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>	
+
 <main <?php hybrid_attr( 'content' ); ?>>
 
 	<?php if ( have_posts() ) : // Checks if any posts were found. ?>
@@ -18,8 +20,8 @@
 
 	<?php endif; // End check for posts. ?>
 
-	<?php locate_template( array( 'misc/loop-nav.php' ), true ); // Loads the misc/loop-nav.php template. ?>
-
 </main><!-- #content -->
+
+<?php locate_template( array( 'misc/loop-nav.php' ), true ); // Loads the misc/loop-nav.php template. ?>
 
 <?php get_footer(); // Loads the footer.php template. ?>

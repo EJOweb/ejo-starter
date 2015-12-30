@@ -14,13 +14,16 @@
 
 				<div <?php hybrid_attr( 'branding' ); ?>>
 					<?php hybrid_site_title(); ?>
-					<p id="site-description"><?php bloginfo( 'description' ); ?></p>
+					<p id="site-description" class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- #branding -->
 
-				<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
+				
 			</div><!-- .wrap -->
 
 		</header><!-- #header -->
 
+		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
+		<?php hybrid_get_menu( 'primary-mobile' ); // Loads the menu/primary-mobile.php template. ?>
+
 		<div id="main" class="main">
-			<div class="wrap">
+			<div class="wrap">			
