@@ -1,33 +1,39 @@
 #content {
-	background: $color__background-body;
-	padding: 3rem 0 2rem;
-
+	background-color: $color__background-main;
+	padding: 2rem 3rem;
+	
 	.entry {
 		margin-bottom: $vertical__space;
+	}	
 
-		.entry-byline {
-			text-align: center;
-			margin-bottom: 0.25rem;
-		}
+	.entry-content {
+		
+	}
 
-		.entry-header {
-			text-align: center;
-		}
+	.entry-byline {
+		display: none;
+	}
 
-		.entry-footer {
-			text-align: center;
-		}
+	.entry-header {
+		
+	}
 
-		//plural
-		+ .entry {
-			&::before {
-				content: '';
-				display: block;
-				height: 1px;
-				width: 50%;
-				background-color: $color__border;
-				margin: 2rem auto 2rem;
-			}
+	.entry-footer {
+		
+	}
+}
+
+
+/* Plural styles */
+#content {	
+	.entry + .entry {
+		&::before {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 25%;
+			background-color: $color__border;
+			margin: 2rem 0 2rem;
 		}
 	}
 }

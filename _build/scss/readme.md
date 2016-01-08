@@ -35,7 +35,7 @@ Modules
 -- captions
 -- smileys
 - accessibility
-- gravity-forms
+- vendors/gravity-forms
 
 Structure
 - site

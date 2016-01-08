@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------
+Headings
+-------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font__family-heading;
+    font-weight: $font__weight-normal;
+    color: $color__text;
+}
+
+h1 {
+    font-size: $font__size-heading-1;
+    line-height: $font__line-height-heading-1;
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+h2 {
+    font-size: $font__size-heading-2;
+    line-height: $font__line-height-heading-2;
+    margin-top: 1.25em;
+    margin-bottom: 0.9em;
+}
+
+h3 {
+    font-size: $font__size-heading-3;
+    line-height: $font__line-height-heading-3;
+    margin-top: 1.35em;
+    margin-bottom: 0.75em;
+}
+
+h4,h5,h6 {
+    font-size: $font__size-heading-4;
+    line-height: $font__line-height-heading-4;
+    margin-top: 1.5em;
+    margin-bottom: 0.44444em;
+}

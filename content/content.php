@@ -20,18 +20,17 @@
 
 	<?php else : // If not a single post. ?>
 
+		<div class="entry-byline">
+			<?php echo $time; ?>
+		</div>
+		
 		<header class="entry-header">
-
-			<div class="entry-byline">
-				<?php echo $time; ?>
-			</div>
-
 			<h2 <?php hybrid_attr( 'entry-title' ); ?>><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark" itemprop="url"><?php the_title(); ?></a></h2>
 		</header><!-- .entry-header -->
 
 		<div <?php hybrid_attr( 'entry-content' ); ?>>
 			
-			<?php the_excerpt(); ?>
+			<?php ejo_the_post_summary(); ?>
 
 		</div><!-- .entry-content -->
 

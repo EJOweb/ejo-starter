@@ -1,0 +1,175 @@
+/* Links
+-------------------------------------------------------------------*/
+a {
+    color: $color__link;
+
+    &:visited {
+        color: $color__link-visited;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color__link-hover;
+    }
+    &:focus {
+        outline: thin dotted;
+    }
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+
+/* Images
+-------------------------------------------------------------------*/
+a.image-wrap {
+    overflow: hidden;
+
+    img {
+        display: block;
+        @include transition( all 0.4s ease );
+    }
+
+    &:hover {
+        img {
+            @include transform( scale(1.1) );
+        }
+    }
+}
+
+/* Paragraphs
+-------------------------------------------------------------------*/
+
+p {}
+
+/* Intro paragraph */
+p.intro {
+    font-weight: $font__weight-bold;
+    font-size: $font__size-large;
+}
+
+/* Lists
+-------------------------------------------------------------------*/
+
+ul, ol {
+    margin-left: 2.5rem;
+
+    ul, ol {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    li {
+        margin-bottom: 0.25rem;
+    }
+}
+
+.checklist {
+    margin-left: 2.5rem;
+    list-style: none;
+
+    li {
+        &:before {
+            @include icon(fa-check);
+            margin-right: 0.5em;
+        }
+    }
+}
+
+/* Tables
+-------------------------------------------------------------------*/
+
+table {}
+
+th {
+    padding: 0.5rem 0;
+}
+
+td {
+    padding: 0.5rem 0;
+}
+
+/* Media
+-------------------------------------------------------------------*/
+
+figure,
+audio,
+video,
+object,
+embed,
+iframe {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* Horizontal Rule
+-------------------------------------------------------------------*/
+
+hr {
+    margin-top: $vertical__space + 0.75rem;
+    margin-bottom: $vertical__space + 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    height: 2px;
+    background-color: $color__border;
+}
+
+/* Blockquotes
+-------------------------------------------------------------------*/
+
+blockquote {
+    border-left: 6px solid $color__border;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 0 0 1.5rem;
+    font-style: italic;
+
+    i,
+    em, 
+    cite {
+        font-style: normal;
+    }
+}
+
+
+/* Code
+-------------------------------------------------------------------*/
+
+code {}
+
+pre {}
+
+pre code {}
+
+/* Font Styles
+-------------------------------------------------------------------*/
+
+b, strong { 
+    font-weight: $font__weight-bold; 
+
+    b, strong { 
+        font-weight: $font__weight-normal; 
+    }
+}
+
+i, em, mark, cite { 
+    font-style: italic; 
+
+    i, em, mark, cite { 
+        font-style: normal; 
+    }
+}
+
+
+/* Forms
+------------------------------------------------------------------ */
+@import "form-fields";
+@import "buttons";
+
+
+/* Alignment
+------------------------------------------------------------------ */
+@import "alignments";

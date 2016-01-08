@@ -3,20 +3,22 @@ $em-base: 16px; // For bourbon rem function
 $font__size: rem($em-base); 
 $font__size-small: rem(14px); 
 $font__size-large: rem(18px); 
-$font__size-heading-1: rem(36px);
-$font__size-heading-2: rem(26px);
-$font__size-heading-3: rem(22px);
+$font__size-heading-1: rem(40px);
+$font__size-heading-2: rem(28px);
+$font__size-heading-3: rem(23px);
 $font__size-heading-4: rem(18px);
 
-$font__line-height: 1.5;
-$font__line-height-small: 1.5;
-$font__line-height-large: 1.77777;
-$font__line-height-heading-1: 1;
+$font__line-height: 1.6;
+$font__line-height-small: 1.6;
+$font__line-height-large: 1.8;
+$font__line-height-heading-1: 1.125;
 $font__line-height-heading-2: 1.125;
 $font__line-height-heading-3: 1.125;
 $font__line-height-heading-4: 1.125;
 $font__line-height-menu: 1.2;
 $font__line-height-pre: 1.6;
+
+$font__residu: ($font__line-height - 1) * $font__size;
 
 // Font Family
 $font__family: Georgia, serif;
@@ -31,4 +33,4 @@ $font__weight-normal: 400;
 $font__weight-bold: 700;
 
 // Gap between typography elements
-$vertical__space: 1.25em;
+$vertical__space: 1.25rem;

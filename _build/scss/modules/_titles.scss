@@ -1,17 +1,15 @@
 /* Titles */
 .entry-title,
-.archive-title {
+.archive-title,
+.widget-title,
+.gsection_title {
 	margin-top: 0;
-
-	a {
-		color: inherit;
-	}
+	a {	color: inherit;	}
 }
 
 h1.entry-title,
 .archive-title {
-	text-align: center;
-	width: 100%;
+
 }
 
 h2.entry-title {
@@ -19,12 +17,10 @@ h2.entry-title {
 }
 
 .widget-title {
-	margin-top: 0;
+
 }
 
-h1.entry-title,
-h1.archive-title,
-.sidebar .widget-title {
-	
+.gsection_title {
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 }
-

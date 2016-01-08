@@ -16,7 +16,7 @@
 	font-size: rem(20);
 
 	&:before { 
-		@include icon('fa-bars');
+		@include icon('fa-navicon');
 		padding-right: 5px;
 	}
 

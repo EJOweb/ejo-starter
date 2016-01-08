@@ -19,7 +19,7 @@
 #menu-primary {
 	.menu-items {
 		@include flex-row();
-		@include justify-content(center);
+		@include justify-content(flex-start);
 		@include flex-wrap(wrap);
 		
 		> .menu-item {
@@ -44,7 +44,9 @@
 
 /* Styling */
 #menu-primary {
-	background-color: $color__background-menu;
+	> .wrap {
+		background-color: $color__background-menu;
+	}
 	&, a {
 		color: $color__text-menu-item;
 	}

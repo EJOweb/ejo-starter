@@ -1,6 +1,7 @@
 // Backgrounds
-$color__background-body: #ffffff;
-$color__background-header: #607d8b;
+$color__background-body: #eceff1;
+$color__background-header: #ffffff;
+$color__background-main: #ffffff;
 $color__background-footer: #eceff1;
 $color__background-button: #546e7a;
 $color__background-button-hover: darken($color__background-button, 5%);
@@ -12,7 +13,7 @@ $color__background-screenreader: #f1f1f1;
 
 // Font colors
 $color__text: #263238;
-$color__text-header: #fff;
+$color__text-header: #263238;
 $color__text-footer: #263238;
 $color__text-button: #fff;
 $color__text-button-alt: #fff;

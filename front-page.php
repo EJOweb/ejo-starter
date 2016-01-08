@@ -2,8 +2,6 @@
 
 <main <?php hybrid_attr( 'content' ); ?>>
 
-	<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>	
-
 	<?php if ( have_posts() ) : // Checks if any posts were found. ?>
 
 		<?php while ( have_posts() ) : // Begins the loop through found posts. ?>

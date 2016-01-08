@@ -1,0 +1,36 @@
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 2rem;
+    margin-top: rem(6px);
+    margin-bottom: $font__residu;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 2rem;
+    margin-top: rem(6px);
+    margin-bottom: $font__residu;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-top: rem(6px);
+    margin-bottom: $font__residu;
+    margin-right: auto;
+}
+
+@include media(smartphone) {
+    .alignleft,
+    .alignright {
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: $vertical__space;
+    }
+}

@@ -7,8 +7,8 @@
  */
 
 //* Get the template directory and uri and make sure it has a trailing slash.
-define( 'THEME_LIB_DIR', trailingslashit( get_template_directory() ) . '_build/' );
-define( 'THEME_LIB_URI', trailingslashit( get_template_directory_uri() ) . '_build/' );
+define( 'THEME_LIB_DIR', trailingslashit( get_template_directory() ) . 'includes/' );
+define( 'THEME_LIB_URI', trailingslashit( get_template_directory_uri() ) . 'includes/' );
 
 //* Set custom Hybrid location.
 define( 'HYBRID_DIR', THEME_LIB_DIR . 'hybrid/' );
@@ -53,6 +53,19 @@ function ejo_theme_setup()
 	//* Better image grabbing
 	add_theme_support( 'get-the-image' );
 
-	//* Filter excerpt_more
-	add_filter( 'excerpt_more', function() { return '...'; } );
+	/* Cleanup Backend */
+	add_theme_support( 'ejo-cleanup-backend', array( 'widgets' ) );
+
+	/* Cleanup Frontend */
+	add_theme_support( 'ejo-cleanup-frontend', array( 'head', 'xmlrpc', 'pingback' ) );
+
+	/* Allow admin to add scripts to entire site and specific posts */
+	add_theme_support( 'ejo-site-scripts' );
+	add_theme_support( 'ejo-post-scripts' );
+
+	/* Allow admin to add scripts */
+	add_theme_support( 'ejo-social-links' );
+
+	/* Improved Visual Editor */
+	add_theme_support( 'ejo-tinymce', array('button', 'intro') );
 }

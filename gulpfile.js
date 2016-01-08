@@ -1,5 +1,5 @@
 /* EJOweb gulpfile
- * v20151020
+ * v20160104
  */
 
 //* Package variables
@@ -42,6 +42,32 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./assets/css/'));
 });
 
+//* Create expanded and minified stylesheet at the same time (performance is fast using libsass)
+//* In case of error, show it only once
+gulp.task('sass-editor', function () {
+
+    //* Create expanded stylesheet
+    gulp.src([sass_dir + 'editor-style.scss'])
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }))
+        .on('error', gutil.log) // On error: show log and continue
+        .pipe(gulp.dest('./assets/css/'));
+
+    //* Create minified stylesheet
+    gulp.src([sass_dir + 'editor-style.scss'])
+        // .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }))
+        .on('error', gutil.noop) // On error: just continue because log is already shown above
+        // .pipe(sourcemaps.write('./'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest('./assets/css/'));
+});
+
 // Lint Task
 gulp.task('lint', function() {
     gulp.src(js_dir + '*.js')
@@ -64,8 +90,8 @@ gulp.task('scripts', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch( js_dir + '*.js', ['lint', 'scripts'] );
-    gulp.watch( sass_dir + '**/*.scss', ['sass'] );
+    gulp.watch( sass_dir + '**/*.scss', ['sass', 'sass-editor'] );
 });
 
 //* Default task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'sass-editor', 'scripts', 'watch']);

@@ -1,3 +1,6 @@
+1.0.2 / 2016-01-08
+Removed gsection padding-top and increased space above send-button
+
 1.0.1 / 2015-12-02
 Further reorganized structure
 
