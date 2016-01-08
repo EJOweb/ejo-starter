@@ -9,8 +9,10 @@ Open command window in your theme root and run the following code (Node should b
 - Cache
 - Redirect
 
+<pre lang="htaccess"><code>
 &#35; Disable directory browsing
 Options All -Indexes
+</code></pre>
 
 http://www.catswhocode.com/blog/10-useful-htaccess-snippets-to-have-in-your-toolbox <br/>
 http://www.wpexplorer.com/htaccess-wordpress-security/
