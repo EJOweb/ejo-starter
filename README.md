@@ -10,7 +10,7 @@ Open command window in your theme root and run the following code (Node should b
 - Redirect
 
 <pre lang="htaccess"><code>
-&#35; Disable directory browsing
+# Disable directory browsing
 Options All -Indexes
 </code></pre>
 
